@@ -1,5 +1,5 @@
 import { ChainId, Token } from '@daoswapdex-heco-mainnet/daoswap-sdk'
-import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
+import { Tags, TokenInfo, TokenList } from '@daoswap-heco/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
 import { AppState } from '../index'

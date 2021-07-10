@@ -1191,9 +1191,9 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@uniswap/token-lists@^1.0.0-beta.21":
+"@daoswap-heco/token-lists@^1.0.0-beta.21":
   version "1.0.0-beta.21"
-  resolved "https://registry.npmjs.org/@uniswap/token-lists/-/token-lists-1.0.0-beta.21.tgz#a7877f592198c42b280821db1ff6c58ce1752347"
+  resolved "https://registry.npmjs.org/@daoswap-heco/token-lists/-/token-lists-1.0.0-beta.21.tgz#a7877f592198c42b280821db1ff6c58ce1752347"
   integrity sha512-krNzt3FDDW69M9qFda/1lNYfy2wGpGxZF2YH2YcfCw0MGd/B+N6jymPJmRrxykbYDLYz6Xr8bjmGjJ3hdBR41A==
 
 "@emotion/cache@^10.0.27":

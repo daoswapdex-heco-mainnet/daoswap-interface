@@ -1,4 +1,4 @@
-import { diffTokenLists, TokenList } from '@uniswap/token-lists'
+import { diffTokenLists, TokenList } from '@daoswap-heco/token-lists'
 import React, { useCallback, useMemo } from 'react'
 // import ReactGA from 'react-ga'
 import { useDispatch } from 'react-redux'
