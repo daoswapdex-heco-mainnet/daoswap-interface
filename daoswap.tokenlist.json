@@ -25,7 +25,7 @@
       "address": "0xa71EdC38d189767582C38A3145b5873052c3e47a",
       "name": "Tether USD",
       "symbol": "USDT",
-      "decimals": 6,
+      "decimals": 18,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
