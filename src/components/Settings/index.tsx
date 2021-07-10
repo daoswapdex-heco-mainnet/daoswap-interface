@@ -20,6 +20,7 @@ import { RowBetween, RowFixed } from '../Row'
 import Toggle from '../Toggle'
 import TransactionSettings from '../TransactionSettings'
 import { useTranslation } from 'react-i18next'
+import i18next from 'i18next'
 
 const StyledMenuIcon = styled(Settings)`
   height: 20px;
@@ -242,6 +243,20 @@ export default function SettingsTab() {
                 </TYPE.black>
               </RowFixed>
               <Toggle isActive={darkMode} toggle={toggleDarkMode} />
+            </RowBetween>
+
+            <RowBetween>
+              <RowFixed>
+                <TYPE.black fontWeight={400} fontSize={14} color={theme.text2}>
+                  {t('changeLanguage')}
+                </TYPE.black>
+              </RowFixed>
+              <button onClick={() => i18next.changeLanguage(i18next.language === 'en' ? 'zh' : 'en')}>
+                {i18next.language === 'en' ? 'zh' : 'en'}
+              </button>
+              {/* <ButtonPrimary onClick={() => i18next.changeLanguage(i18next.language === 'en' ? 'zh' : 'en')}>
+                {i18next.language === 'en' ? 'zh' : 'en'}
+              </ButtonPrimary> */}
             </RowBetween>
           </AutoColumn>
         </MenuFlyout>
