@@ -1,0 +1,33 @@
+{
+  "name": "Daoswap",
+  "logoURI": "https://app.heco.daoswap.cc/daoswap.svg",
+  "keywords": ["defi", "doi"],
+  "timestamp": "2021-04-15T01:40:34.305Z",
+  "tokens": [
+    {
+      "chainId": 128,
+      "address": "0xc096332CAacF00319703558988aD03eC6586e704",
+      "name": "Daoswap",
+      "symbol": "DAO",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0x7Ef5ac1FE8B6832EbAddEE1856E4A21E46843565",
+      "name": "Daoswap",
+      "symbol": "DOI",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0xa71EdC38d189767582C38A3145b5873052c3e47a",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    }
+  ],
+  "version": { "major": 0, "minor": 0, "patch": 0 }
+}
