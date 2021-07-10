@@ -19,14 +19,6 @@
       "symbol": "DOI",
       "decimals": 18,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
-    },
-    {
-      "chainId": 128,
-      "address": "0xa71EdC38d189767582C38A3145b5873052c3e47a",
-      "name": "Tether USD",
-      "symbol": "USDT",
-      "decimals": 18,
-      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
   "version": { "major": 0, "minor": 0, "patch": 0 }
