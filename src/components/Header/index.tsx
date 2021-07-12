@@ -277,7 +277,7 @@ export default function Header() {
           <StyledNavLink id={`governace-nav-link`} to={'/governace'}>
             {t('Governace')}
           </StyledNavLink>
-          <StyledHrefLink href="https://bridge.heco.daoswap.cc" target="_self">
+          <StyledHrefLink href="https://bridge.heco.daoswap.cc/token/DAO" target="_self">
             {t('Bridge')}
           </StyledHrefLink>
         </HeaderLinks>

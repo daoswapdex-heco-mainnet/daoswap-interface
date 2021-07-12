@@ -130,7 +130,7 @@ export default function Menu() {
             <MessageCircle size={14} />
             Twitter
           </MenuItem>
-          <MenuItemHref id="link" href="https://bridge.heco.daoswap.cc" target="_self">
+          <MenuItemHref id="link" href="https://bridge.heco.daoswap.cc/token/DAO" target="_self">
             <MessageCircle size={14} />
             {t('Bridge')}
           </MenuItemHref>
