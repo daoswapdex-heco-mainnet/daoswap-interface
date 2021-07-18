@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { BookOpen, Info, MessageCircle } from 'react-feather'
+import { BookOpen, Info, MessageCircle, PieChart, Link } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
@@ -130,8 +130,12 @@ export default function Menu() {
             <MessageCircle size={14} />
             Twitter
           </MenuItem>
+          <MenuItemHref id="link" href="https://info.heco.daoswap.cc" target="_self">
+            <PieChart size={14} />
+            {t('Charts')}
+          </MenuItemHref>
           <MenuItemHref id="link" href="https://bridge.heco.daoswap.cc/token/DAO" target="_self">
-            <MessageCircle size={14} />
+            <Link size={14} />
             {t('Bridge')}
           </MenuItemHref>
         </MenuFlyout>

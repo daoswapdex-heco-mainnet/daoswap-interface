@@ -178,7 +178,7 @@ export default function Pool() {
               <>
                 <ButtonSecondary>
                   <RowBetween>
-                    <ExternalLink href={'https://info.daoswap.cc/account/' + account}>
+                    <ExternalLink href={'https://info.heco.daoswap.cc/account/' + account}>
                       {t('Account analytics and accrued fees')}
                     </ExternalLink>
                     <span> ↗</span>

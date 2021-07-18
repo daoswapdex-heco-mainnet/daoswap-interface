@@ -117,7 +117,7 @@ export function AdvancedSwapDetails({ trade }: AdvancedSwapDetailsProps) {
           )}
           <AutoColumn style={{ padding: '0 24px' }}>
             <InfoLink
-              href={'https://info.daoswap.cc/pair/' + trade.route.pairs[0].liquidityToken.address}
+              href={'https://info.heco.daoswap.cc/pair/' + trade.route.pairs[0].liquidityToken.address}
               target="_blank"
             >
               {t('View pair analytics')} ↗
