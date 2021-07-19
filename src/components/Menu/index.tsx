@@ -66,7 +66,7 @@ const MenuFlyout = styled.span`
   z-index: 100;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
-    top: -12.25rem;
+    top: -14.25rem;
   `};
 `
 
