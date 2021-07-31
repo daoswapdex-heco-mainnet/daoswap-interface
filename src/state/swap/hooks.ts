@@ -179,13 +179,13 @@ export function useDerivedSwapInfo(): {
   //   inputError = inputError ?? t('DAO is not tradable')
   // }
 
-  if (v2Trade && DAO_ADDRESS === inputCurrencyId) {
-    const { priceImpactWithoutFee } = computeTradePriceBreakdown(v2Trade)
-    const priceImpactSeverity = warningSeverity(priceImpactWithoutFee)
-    if (priceImpactSeverity >= 1) {
-      inputError = inputError ?? t('Price Impact High')
-    }
-  }
+  // if (v2Trade && DAO_ADDRESS === inputCurrencyId) {
+  //   const { priceImpactWithoutFee } = computeTradePriceBreakdown(v2Trade)
+  //   const priceImpactSeverity = warningSeverity(priceImpactWithoutFee)
+  //   if (priceImpactSeverity >= 1) {
+  //     inputError = inputError ?? t('Price Impact High')
+  //   }
+  // }
 
   const formattedTo = isAddress(to)
   if (!to || !formattedTo) {
