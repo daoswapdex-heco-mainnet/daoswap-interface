@@ -14,14 +14,6 @@
     },
     {
       "chainId": 128,
-      "address": "0x7Ef5ac1FE8B6832EbAddEE1856E4A21E46843565",
-      "name": "Daoswap",
-      "symbol": "DOI",
-      "decimals": 18,
-      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
-    },
-    {
-      "chainId": 128,
       "address": "0x3d760a45d0887dfd89a2f5385a236b29cb46ed2a",
       "name": "Dai Stablecoin",
       "symbol": "DAI",
