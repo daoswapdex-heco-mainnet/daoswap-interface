@@ -35,6 +35,14 @@
       "symbol": "USDT",
       "decimals": 18,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0x0c5bcA069ee367FE35Be2B09134f3b4ceBf33C5E",
+      "name": "ALTAI IFBB COIN",
+      "symbol": "AIC",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
   "version": { "major": 0, "minor": 0, "patch": 0 }
