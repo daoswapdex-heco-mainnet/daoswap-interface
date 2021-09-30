@@ -2,7 +2,7 @@
   "name": "Daoswap",
   "logoURI": "https://app.heco.daoswap.cc/daoswap.svg",
   "keywords": ["defi", "doi"],
-  "timestamp": "2021-07-10T01:40:34.305Z",
+  "timestamp": "2021-09-30T01:40:34.305Z",
   "tokens": [
     {
       "chainId": 128,
@@ -43,7 +43,15 @@
       "symbol": "AIC",
       "decimals": 18,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0xae3a768f9aB104c69A7CD6041fE16fFa235d1810",
+      "name": "Heco-Peg HFIL Token",
+      "symbol": "HFIL",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
-  "version": { "major": 0, "minor": 0, "patch": 0 }
+  "version": { "major": 0, "minor": 0, "patch": 1 }
 }
