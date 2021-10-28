@@ -51,7 +51,23 @@
       "symbol": "HFIL",
       "decimals": 18,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0x66a79D23E58475D2738179Ca52cd0b41d73f0BEa",
+      "name": "Heco-Peg HBTC Token",
+      "symbol": "HBTC",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0x64FF637fB478863B7468bc97D30a5bF3A428a1fD",
+      "name": "Heco-Peg ETH Token",
+      "symbol": "ETH",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
-  "version": { "major": 0, "minor": 0, "patch": 1 }
+  "version": { "major": 0, "minor": 0, "patch": 2 }
 }
