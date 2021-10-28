@@ -13,7 +13,7 @@ import { Break, CardNoise, CardBGImage } from './styled'
 import { unwrappedToken } from '../../utils/wrappedCurrency'
 import { useTotalSupply } from '../../data/TotalSupply'
 import { usePair } from '../../data/Reserves'
-import useUSDCPrice from '../../utils/useUSDCPrice'
+import useUSDTPrice from '../../utils/useUSDTPrice'
 import { useTranslation } from 'react-i18next'
 
 const StatContainer = styled.div`
@@ -109,9 +109,26 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
   }
 
   // get the USD value of staked WETH
-  const USDPrice = useUSDCPrice(WETH)
-  const valueOfTotalStakedAmountInUSDC =
+  const USDPrice = useUSDTPrice(WETH)
+  const valueOfTotalStakedAmountInUSDT =
     valueOfTotalStakedAmountInWETH && USDPrice?.quote(valueOfTotalStakedAmountInWETH)
+
+  // get ths USD value the Reward Token
+  const USDPriceForRewardToken = useUSDTPrice(stakingInfo.earnedAmount.currency)
+  const USDPriceForRewardTokenMultiply1000 = USDPriceForRewardToken?.raw.multiply(JSBI.BigInt(1000))
+
+  // totalRewardRate of Year
+  const yearRewardRate = JSBI.multiply(stakingInfo.totalRewardRate.raw, JSBI.BigInt(60 * 60 * 24 * 365))
+  const yearRewardValue = JSBI.multiply(
+    yearRewardRate,
+    JSBI.BigInt(USDPriceForRewardTokenMultiply1000 ? USDPriceForRewardTokenMultiply1000?.toFixed(0) : JSBI.BigInt('0'))
+  )
+
+  const annualRateUp = Number(JSBI.divide(yearRewardValue, JSBI.BigInt(1000)).toString())
+  const annualRateDown = Number(
+    valueOfTotalStakedAmountInUSDT?.raw ? valueOfTotalStakedAmountInUSDT.raw : JSBI.BigInt(1).toString()
+  )
+  const annualRatePercent = annualRateDown > 0 ? ((annualRateUp / annualRateDown) * 100).toFixed(2) : 0
 
   return (
     <Wrapper showBackground={isStaking} bgColor={backgroundColor}>
@@ -135,8 +152,8 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
         <RowBetween>
           <TYPE.white> {t('Total deposited')}</TYPE.white>
           <TYPE.white>
-            {valueOfTotalStakedAmountInUSDC
-              ? `$${valueOfTotalStakedAmountInUSDC.toFixed(0, { groupSeparator: ',' })}`
+            {valueOfTotalStakedAmountInUSDT
+              ? `$${valueOfTotalStakedAmountInUSDT.toFixed(0, { groupSeparator: ',' })}`
               : `${valueOfTotalStakedAmountInWETH?.toSignificant(4, { groupSeparator: ',' }) ?? '-'} HT`}
           </TYPE.white>
         </RowBetween>
@@ -148,9 +165,10 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
         </RowBetween>
       </StatContainer>
 
+      <Break />
+
       {isStaking && (
         <>
-          <Break />
           <BottomSection showBackground={true}>
             <TYPE.black color={'white'} fontWeight={500}>
               <span>{t('Your rate')}</span>
@@ -167,6 +185,18 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
           </BottomSection>
         </>
       )}
+
+      <>
+        <BottomSection showBackground={true}>
+          <TYPE.black color={'white'} fontWeight={500}>
+            <span>{t('Annual rate')}</span>
+          </TYPE.black>
+
+          <TYPE.black style={{ textAlign: 'right' }} color={'white'} fontWeight={500}>
+            {`${annualRatePercent} %`}
+          </TYPE.black>
+        </BottomSection>
+      </>
     </Wrapper>
   )
 }
