@@ -91,7 +91,15 @@
       "symbol": "UNI",
       "decimals": 18,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0xecb56cf772B5c9A6907FB7d32387Da2fCbfB63b4",
+      "name": "Heco-Peg HLTC Token",
+      "symbol": "HLTC",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
-  "version": { "major": 0, "minor": 0, "patch": 4 }
+  "version": { "major": 0, "minor": 0, "patch": 5 }
 }
