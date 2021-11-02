@@ -70,9 +70,9 @@
     },
     {
       "chainId": 128,
-      "address": "0x03Ed8F569DCF8824c48Cd8B6Fa8ABA5f21297Ca9",
-      "name": "SHIBA INU MOTHER",
-      "symbol": "SHIBM",
+      "address": "0xDD86DD2Dc0ACA2A8F41a680fc1f88Ec1b7Fc9B09",
+      "name": "Heco-Peg SHIB Token",
+      "symbol": "SHIB",
       "decimals": 18,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     },
@@ -93,5 +93,5 @@
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
-  "version": { "major": 0, "minor": 0, "patch": 3 }
+  "version": { "major": 0, "minor": 0, "patch": 4 }
 }
