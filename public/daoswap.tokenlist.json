@@ -99,7 +99,15 @@
       "symbol": "HLTC",
       "decimals": 18,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0x40280E26A572745B1152A54D1D44F365DaA51618",
+      "name": "Heco-Peg DOGE Token",
+      "symbol": "DOGE",
+      "decimals": 8,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
-  "version": { "major": 0, "minor": 0, "patch": 5 }
+  "version": { "major": 0, "minor": 0, "patch": 6 }
 }
