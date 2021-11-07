@@ -107,7 +107,31 @@
       "symbol": "DOGE",
       "decimals": 8,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0x631926E8B579Fb5dfc2dbd7E849e06a4679f0B4c",
+      "name": "Heco-Peg ZEC Token",
+      "symbol": "ZEC",
+      "decimals": 8,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0x96674f8da3F9c6ACb4A56b393AF9A490D70D16d0",
+      "name": "Heco-Peg SKM Token",
+      "symbol": "SKM",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0xe25A7D0B6bcDa2a832d255edef1387E72d20883b",
+      "name": "Heco-Peg ZKS Token",
+      "symbol": "ZKS",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
-  "version": { "major": 0, "minor": 0, "patch": 6 }
+  "version": { "major": 0, "minor": 0, "patch": 7 }
 }
