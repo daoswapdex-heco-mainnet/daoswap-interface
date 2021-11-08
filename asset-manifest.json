@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "./static/js/main.e84939e4.chunk.js",
-    "main.js.map": "./static/js/main.e84939e4.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.ee5453ef.js",
-    "runtime-main.js.map": "./static/js/runtime-main.ee5453ef.js.map",
+    "main.js": "./static/js/main.2e50ccad.chunk.js",
+    "main.js.map": "./static/js/main.2e50ccad.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.4c01ea7b.js",
+    "runtime-main.js.map": "./static/js/runtime-main.4c01ea7b.js.map",
     "static/css/2.f04942fe.chunk.css": "./static/css/2.f04942fe.chunk.css",
-    "static/js/2.7402e67e.chunk.js": "./static/js/2.7402e67e.chunk.js",
-    "static/js/2.7402e67e.chunk.js.map": "./static/js/2.7402e67e.chunk.js.map",
-    "static/js/3.d4dda09e.chunk.js": "./static/js/3.d4dda09e.chunk.js",
-    "static/js/3.d4dda09e.chunk.js.map": "./static/js/3.d4dda09e.chunk.js.map",
-    "static/js/4.5b2524c8.chunk.js": "./static/js/4.5b2524c8.chunk.js",
-    "static/js/4.5b2524c8.chunk.js.map": "./static/js/4.5b2524c8.chunk.js.map",
+    "static/js/2.19f40cf6.chunk.js": "./static/js/2.19f40cf6.chunk.js",
+    "static/js/2.19f40cf6.chunk.js.map": "./static/js/2.19f40cf6.chunk.js.map",
+    "static/js/3.41d9f13e.chunk.js": "./static/js/3.41d9f13e.chunk.js",
+    "static/js/3.41d9f13e.chunk.js.map": "./static/js/3.41d9f13e.chunk.js.map",
+    "static/js/4.7b04ac13.chunk.js": "./static/js/4.7b04ac13.chunk.js",
+    "static/js/4.7b04ac13.chunk.js.map": "./static/js/4.7b04ac13.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.0170ed7a294633cc43ac166eef9ff280.js": "./precache-manifest.0170ed7a294633cc43ac166eef9ff280.js",
+    "precache-manifest.b5c0c870ecc0b06c90dd324f39df4b80.js": "./precache-manifest.b5c0c870ecc0b06c90dd324f39df4b80.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.f04942fe.chunk.css.map": "./static/css/2.f04942fe.chunk.css.map",
-    "static/js/2.7402e67e.chunk.js.LICENSE.txt": "./static/js/2.7402e67e.chunk.js.LICENSE.txt",
-    "static/js/3.d4dda09e.chunk.js.LICENSE.txt": "./static/js/3.d4dda09e.chunk.js.LICENSE.txt",
+    "static/js/2.19f40cf6.chunk.js.LICENSE.txt": "./static/js/2.19f40cf6.chunk.js.LICENSE.txt",
+    "static/js/3.41d9f13e.chunk.js.LICENSE.txt": "./static/js/3.41d9f13e.chunk.js.LICENSE.txt",
     "static/media/inter.css": "./static/media/Inter.var.4b976905.woff2",
     "static/media/arrow-down-blue.svg": "./static/media/arrow-down-blue.114fab91.svg",
     "static/media/arrow-down-grey.svg": "./static/media/arrow-down-grey.4d4a6a99.svg",
@@ -24,6 +24,8 @@
     "static/media/arrow-right.svg": "./static/media/arrow-right.e96d8158.svg",
     "static/media/big_unicorn.png": "./static/media/big_unicorn.4f0edbf5.png",
     "static/media/blue-loader.svg": "./static/media/blue-loader.e62a99c3.svg",
+    "static/media/certik-logotype-white.svg": "./static/media/certik-logotype-white.9b6e034e.svg",
+    "static/media/certik-logotype.svg": "./static/media/certik-logotype.4f3ec71d.svg",
     "static/media/circle-grey.svg": "./static/media/circle-grey.5dd950ec.svg",
     "static/media/circle.svg": "./static/media/circle.716403ba.svg",
     "static/media/dropdown-blue.svg": "./static/media/dropdown-blue.80a3ae25.svg",
@@ -47,9 +49,9 @@
     "static/media/xl_uni.png": "./static/media/xl_uni.ebe07398.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ee5453ef.js",
+    "static/js/runtime-main.4c01ea7b.js",
     "static/css/2.f04942fe.chunk.css",
-    "static/js/2.7402e67e.chunk.js",
-    "static/js/main.e84939e4.chunk.js"
+    "static/js/2.19f40cf6.chunk.js",
+    "static/js/main.2e50ccad.chunk.js"
   ]
 }
