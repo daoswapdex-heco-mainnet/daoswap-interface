@@ -336,5 +336,10 @@
   "Function development, please wait patiently...": "Function development, please wait patiently...",
 
   "Bridge": "Bridge",
-  "changeLanguage": "ChangeLanguage"
+  "changeLanguage": "ChangeLanguage",
+  "Hash Mining": "Hash Mining",
+  "Competition Mining": "Competition Mining",
+
+  "Announcement": "Announcement",
+  "You have a new announcement": "You have a new announcement"
 }
