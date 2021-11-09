@@ -2,8 +2,7 @@
 import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@daoswapdex-heco-mainnet/daoswap-sdk'
 import { useMemo } from 'react'
 // TODO:Daoswap ERC20
-import { UNI } from '../../constants'
-// import { DAO_HECO_TESTNET, DAI_HECO_TESTNET } from '../../constants'
+import { UNI, USDT } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
@@ -11,10 +10,10 @@ import { tryParseAmount } from '../swap/hooks'
 import { useTranslation } from 'react-i18next'
 
 // TODO:Daoswap Start Time
-export const STAKING_GENESIS = 1608267600
+export const STAKING_GENESIS = 1635351300
 
 // TODO:Daoswap Rewards Duration : unit - day
-export const REWARDS_DURATION_DAYS = 1
+export const REWARDS_DURATION_DAYS = 14
 
 // TODO add staking rewards addresses here
 export const STAKING_REWARDS_INFO: {
@@ -23,11 +22,11 @@ export const STAKING_REWARDS_INFO: {
     stakingRewardAddress: string
   }[]
 } = {
-  [ChainId.HECO_TESTNET]: [
-    // {
-    //   tokens: [DAO_HECO_TESTNET, DAI_HECO_TESTNET],
-    //   stakingRewardAddress: '0x1097394f70E32EECf3160276011F3d188AA4465a'
-    // }
+  [ChainId.HECO_MAINNET]: [
+    {
+      tokens: [USDT, UNI[ChainId.HECO_MAINNET]],
+      stakingRewardAddress: '0x6F6a46aDEA8D796d3586b09C857a809424ED2042'
+    }
   ]
 }
 
@@ -60,6 +59,21 @@ export interface StakingInfo {
 // gets the staking info from the network for the active chain id
 export function useStakingInfo(pairToFilterBy?: Pair | null): StakingInfo[] {
   const { chainId, account } = useActiveWeb3React()
+
+  // TODO: is display staking rewards info list for specical address
+  const whiteList = [
+    '0x70FBf5E00a67aAaD3146cE4B017CbbaB4202a7CC',
+    '0x415854D1459755Fa8ef1Bb1c723434C2DBcB8798',
+    '0x7d3dE024dEB70741c6Dfa0FaD57775A47C227AE2',
+    '0x3DdcFc89B4DD2b33d9a8Ca0F60180527E9810D4B',
+    '0x87363b840fDfbd53dA62692214d8B9255d737652',
+    '0xE603dF2377bf9cF35Fb4bB5d0cD8D48f5b041F49',
+    '0x9b1d0c9c1aE96011776e6786b4Efe884665918D2'
+  ]
+  const inWhiteList = whiteList.filter(item => item === account)
+  if (inWhiteList.length <= 0) {
+    STAKING_REWARDS_INFO[chainId ? chainId : 128] = []
+  }
 
   const info = useMemo(
     () =>

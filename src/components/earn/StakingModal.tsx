@@ -16,20 +16,20 @@ import { usePairContract, useStakingContract } from '../../hooks/useContract'
 import { useApproveCallback, ApprovalState } from '../../hooks/useApproveCallback'
 import { splitSignature } from 'ethers/lib/utils'
 import { StakingInfo, useDerivedStakeInfo } from '../../state/stake/hooks'
-import { wrappedCurrencyAmount } from '../../utils/wrappedCurrency'
+// import { wrappedCurrencyAmount } from '../../utils/wrappedCurrency'
 import { TransactionResponse } from '@ethersproject/providers'
 import { useTransactionAdder } from '../../state/transactions/hooks'
 import { LoadingView, SubmittedView } from '../ModalViews'
 import { useTranslation } from 'react-i18next'
 
-const HypotheticalRewardRate = styled.div<{ dim: boolean }>`
-  display: flex;
-  justify-content: space-between;
-  padding-right: 20px;
-  padding-left: 20px;
+// const HypotheticalRewardRate = styled.div<{ dim: boolean }>`
+//   display: flex;
+//   justify-content: space-between;
+//   padding-right: 20px;
+//   padding-left: 20px;
 
-  opacity: ${({ dim }) => (dim ? 0.5 : 1)};
-`
+//   opacity: ${({ dim }) => (dim ? 0.5 : 1)};
+// `
 
 const ContentWrapper = styled(AutoColumn)`
   width: 100%;
@@ -51,16 +51,16 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
   // track and parse user input
   const [typedValue, setTypedValue] = useState('')
   const { parsedAmount, error } = useDerivedStakeInfo(typedValue, stakingInfo.stakedAmount.token, userLiquidityUnstaked)
-  const parsedAmountWrapped = wrappedCurrencyAmount(parsedAmount, chainId)
+  // const parsedAmountWrapped = wrappedCurrencyAmount(parsedAmount, chainId)
 
-  let hypotheticalRewardRate: TokenAmount = new TokenAmount(stakingInfo.rewardRate.token, '0')
-  if (parsedAmountWrapped?.greaterThan('0')) {
-    hypotheticalRewardRate = stakingInfo.getHypotheticalRewardRate(
-      stakingInfo.stakedAmount.add(parsedAmountWrapped),
-      stakingInfo.totalStakedAmount.add(parsedAmountWrapped),
-      stakingInfo.totalRewardRate
-    )
-  }
+  // let hypotheticalRewardRate: TokenAmount = new TokenAmount(stakingInfo.rewardRate.token, '0')
+  // if (parsedAmountWrapped?.greaterThan('0')) {
+  //   hypotheticalRewardRate = stakingInfo.getHypotheticalRewardRate(
+  //     stakingInfo.stakedAmount.add(parsedAmountWrapped),
+  //     stakingInfo.totalStakedAmount.add(parsedAmountWrapped),
+  //     stakingInfo.totalRewardRate
+  //   )
+  // }
 
   // state for pending and submitted txn views
   const addTransaction = useTransactionAdder()
@@ -216,7 +216,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
             id="stake-liquidity-token"
           />
 
-          <HypotheticalRewardRate dim={!hypotheticalRewardRate.greaterThan('0')}>
+          {/* <HypotheticalRewardRate dim={!hypotheticalRewardRate.greaterThan('0')}>
             <div>
               <TYPE.black fontWeight={600}>{t('Weekly Rewards')}</TYPE.black>
             </div>
@@ -225,7 +225,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
               {hypotheticalRewardRate.multiply((60 * 60 * 24 * 7).toString()).toSignificant(4, { groupSeparator: ',' })}{' '}
               DAO / {t('week')}
             </TYPE.black>
-          </HypotheticalRewardRate>
+          </HypotheticalRewardRate> */}
 
           <RowBetween>
             <ButtonConfirmed

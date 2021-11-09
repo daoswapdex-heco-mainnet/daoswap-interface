@@ -175,10 +175,9 @@ export default function Manage({
             </TYPE.body>
           </AutoColumn>
         </PoolData>
-        <PoolData>
+        {/* <PoolData>
           <AutoColumn gap="sm">
             <TYPE.body style={{ margin: 0 }}>{t('Pool Rate')}</TYPE.body>
-            {/* // TODO:Daoswap UNI -> DAO */}
             <TYPE.body fontSize={24} fontWeight={500}>
               {stakingInfo?.totalRewardRate
                 ?.multiply((60 * 60 * 24 * 7).toString())
@@ -186,7 +185,7 @@ export default function Manage({
               {` DAO / ${t('week')}`}
             </TYPE.body>
           </AutoColumn>
-        </PoolData>
+        </PoolData> */}
       </DataRow>
 
       {showAddLiquidityButton && (
@@ -300,18 +299,17 @@ export default function Manage({
                   />
                 </TYPE.largeHeader>
               </RowBetween>
-              <RowBetween style={{ alignItems: 'baseline' }}>
+              {/* <RowBetween style={{ alignItems: 'baseline' }}>
                 <TYPE.black fontSize={16} fontWeight={500}>
                   <span role="img" aria-label="wizard-icon" style={{ marginRight: '8px ' }}>
                     ⚡
                   </span>
-                  {/* // TODO:Daoswap UNI -> DAO */}
                   {stakingInfo?.rewardRate
                     ?.multiply((60 * 60 * 24 * 7).toString())
                     ?.toSignificant(4, { groupSeparator: ',' }) ?? '-'}
                   {` DAO / ${t('week')}`}
                 </TYPE.black>
-              </RowBetween>
+              </RowBetween> */}
             </AutoColumn>
           </StyledBottomCard>
         </BottomSection>

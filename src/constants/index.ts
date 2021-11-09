@@ -21,6 +21,21 @@ export const USDT = new Token(
   'USDT',
   'Tether USD'
 )
+export const ETH = new Token(
+  ChainId.HECO_MAINNET,
+  '0x64FF637fB478863B7468bc97D30a5bF3A428a1fD',
+  18,
+  'ETH',
+  'Heco-Peg ETH Token'
+)
+export const HFIL = new Token(
+  ChainId.HECO_MAINNET,
+  '0xae3a768f9aB104c69A7CD6041fE16fFa235d1810',
+  18,
+  'HFIL',
+  'Heco-Peg HFIL Token'
+)
+export const HT = new Token(ChainId.HECO_MAINNET, '0x5545153CCFcA01fbd7Dd11C0b23ba694D9509A6F', 18, 'HT', 'Wrapped HT')
 // export const COMP = new Token(ChainId.MAINNET, '0xc00e94Cb662C3520282E6f5717214004A7f26888', 18, 'COMP', 'Compound')
 // export const MKR = new Token(ChainId.MAINNET, '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2', 18, 'MKR', 'Maker')
 // export const AMPL = new Token(ChainId.MAINNET, '0xD46bA6D942050d489DBd938a2C909A5d5039A161', 9, 'AMPL', 'Ampleforth')
