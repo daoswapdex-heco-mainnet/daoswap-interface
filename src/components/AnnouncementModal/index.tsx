@@ -37,8 +37,14 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
             USDT/DAO，USDT/ETH，USDT/HFIL，USDT/HT。
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
+            {t('2, Hash mining and competitive mining open simultaneously with liquidity mining for.')}
+            <br />
             {t(
-              '2, According to official news, DAOSWAP DEX, which lays out the meta-universe ecology, has passed security audit by CertiK. CertiK tests the security of smart contracts against various types of attack issues by manually checking the entire code base line by line by technical experts and ensuring that the contracts comply with current industry standards and customer specifications, etc. The report shows that there are no serious and significant vulnerabilities in DAOSWAOP, and some minor issues have been resolved.'
+              'Become a planetary/stellar node, invite more people to participate in liquidity mining to accumulate arithmetic power, and then participate in arithmetic mining when liquidity mining ends.'
+            )}
+            <br />
+            {t(
+              'Note&#58; Hash and competitive mining will be counted within 3 business days after the liquidity mining ends (after 11am on November 23rd). After the end of liquidity mining, liquidity LP needs to be taken out from the reward pool in order to be used as valid arithmetic. So please prompt the invited community members to take out the liquidity LP instantly to avoid missing the arithmetic mining.'
             )}
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
