@@ -131,7 +131,23 @@
       "symbol": "ZKS",
       "decimals": 18,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0x09006b66d89e5213Fc173403AACBA30620A91F4e",
+      "name": "Heco-Peg MANA Token",
+      "symbol": "MANA",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0xeF3CEBD77E0C52cb6f60875d9306397B5Caca375",
+      "name": "Heco-Peg HBCH Token",
+      "symbol": "HBCH",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
-  "version": { "major": 0, "minor": 0, "patch": 7 }
+  "version": { "major": 0, "minor": 0, "patch": 8 }
 }
