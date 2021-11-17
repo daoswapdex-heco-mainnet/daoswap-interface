@@ -346,5 +346,14 @@
   "2, Hash mining and competitive mining open simultaneously with liquidity mining for.": "2, Hash mining and competitive mining open simultaneously with liquidity mining for.",
   "Become a planetary/stellar node, invite more people to participate in liquidity mining to accumulate arithmetic power, and then participate in arithmetic mining when liquidity mining ends.": "Become a planetary/stellar node, invite more people to participate in liquidity mining to accumulate arithmetic power, and then participate in arithmetic mining when liquidity mining ends.",
   "Note&#58; Hash and competitive mining will be counted within 3 business days after the liquidity mining ends (after 11am on November 23rd). After the end of liquidity mining, liquidity LP needs to be taken out from the reward pool in order to be used as valid arithmetic. So please prompt the invited community members to take out the liquidity LP instantly to avoid missing the arithmetic mining.": "Note: Hash and competitive mining will be counted within 3 business days after the liquidity mining ends (after 11am on November 23rd). After the end of liquidity mining, liquidity LP needs to be taken out from the reward pool in order to be used as valid arithmetic. So please prompt the invited community members to take out the liquidity LP instantly to avoid missing the arithmetic mining.",
-  "3, DAOSWAP trading paris increased to&#58; DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO.": "3, DAOSWAP trading paris increased to: DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO."
+  "3, DAOSWAP trading paris increased to&#58; DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO.": "3, DAOSWAP trading paris increased to: DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO.",
+
+  "Node Type": "Node Type",
+  "NodeType None": "None",
+  "NodeType Stellar": "Stellar",
+  "NodeType Planet": "Planet",
+  "1, Planet and Stellar node status will be determined by the number of DAO/USDT pool liquidity provider certificates (LP) held.": "1, Planet and Stellar node status will be determined by the number of DAO/USDT pool liquidity provider certificates (LP) held.",
+  "2, Planet nodes need >=1000 LP and Stellar need >=10000 LP.": "2, Planet nodes need >=1000 LP and Stellar need >=10000 LP.",
+  "3, The above criteria are valid within DAO price <= 30USDT, after >= 30USDT it will be decided by community vote (whether to consider lowering LP value criteria).": "3, The above criteria are valid within DAO price <= 30USDT, after >= 30USDT it will be decided by community vote (whether to consider lowering LP value criteria).",
+  "Aurora CAC, effective on November 17, 2021.": "Aurora CAC, effective on November 17, 2021."
 }
