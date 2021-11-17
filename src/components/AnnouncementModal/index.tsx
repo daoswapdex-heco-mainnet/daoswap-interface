@@ -37,6 +37,25 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
             USDT/DAO，USDT/ETH，USDT/HFIL，USDT/HT。
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
+            2, {t('About Node')}:
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t(
+                '1, Planet and Stellar node status will be determined by the number of DAO/USDT pool liquidity provider certificates (LP) held.'
+              )}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('2, Planet nodes need >=1000 LP and Stellar need >=10000 LP.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t(
+                '3, The above criteria are valid within DAO price <= 30USDT, after >= 30USDT it will be decided by community vote (whether to consider lowering LP value criteria).'
+              )}
+            </Text>
+          </Text>
+          <Text fontWeight={500} fontSize={14} margin={10}>
+            {t('Aurora CAC, effective on November 17, 2021.')}
+          </Text>
+          {/* <Text fontWeight={500} fontSize={14} margin={10}>
             {t('2, Hash mining and competitive mining open simultaneously with liquidity mining for.')}
             <br />
             {t(
@@ -51,7 +70,7 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
             {t(
               '3, DAOSWAP trading paris increased to&#58; DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO.'
             )}
-          </Text>
+          </Text> */}
         </AutoColumn>
       </Section>
     </Wrapper>

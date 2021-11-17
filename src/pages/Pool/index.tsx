@@ -13,6 +13,7 @@ import Card from '../../components/Card'
 import { RowBetween, RowFixed } from '../../components/Row'
 import { ButtonPrimary, ButtonSecondary } from '../../components/Button'
 import { AutoColumn } from '../../components/Column'
+import { NodeType } from '../../components/NodeType'
 
 import { useActiveWeb3React } from '../../hooks'
 import { usePairs } from '../../data/Reserves'
@@ -78,6 +79,14 @@ export default function Pool() {
   const theme = useContext(ThemeContext)
   const { account } = useActiveWeb3React()
 
+  // TODO: is display staking rewards info list for specical address
+  // const whiteList = [
+  //   '0x70FBf5E00a67aAaD3146cE4B017CbbaB4202a7CC',
+  //   '0x7d3dE024dEB70741c6Dfa0FaD57775A47C227AE2',
+  //   '0xa9bB710996d6ed61B83a5EAB583bAe683199c2de'
+  // ]
+  // const inWhiteList = whiteList.filter(item => item.toLowerCase() === account?.toLowerCase())
+
   // fetch the user's balances of all tracked V2 LP tokens
   const trackedTokenPairs = useTrackedTokenPairs()
   const tokenPairsWithLiquidityTokens = useMemo(
@@ -141,6 +150,8 @@ export default function Pool() {
           <CardBGImage />
           <CardNoise />
         </VoteCard>
+
+        {!v2IsLoading && allV2PairsWithLiquidity.length > 0 ? <NodeType pairs={allV2PairsWithLiquidity} /> : null}
 
         <AutoColumn gap="lg" justify="center">
           <AutoColumn gap="lg" style={{ width: '100%' }}>

@@ -201,3 +201,15 @@ export const BLOCKED_PRICE_IMPACT_NON_EXPERT: Percent = new Percent(JSBI.BigInt(
 // used to ensure the user doesn't send so much ETH so they end up with <.01
 export const MIN_ETH: JSBI = JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(16)) // .01 ETH
 export const BETTER_TRADE_LINK_THRESHOLD = new Percent(JSBI.BigInt(75), JSBI.BigInt(10000))
+
+// Node Type
+export const USDT_DAO_PAIR_ADDRESS = '0x1dbCac9E084A25d542893B14128a5910dF43a6b7'
+export const USDT_DAO_STAKING_REWARDS_ADDRESS = '0xAe7184fcCCFc096f5F48Fffe384Cce8433FCE0E0'
+export const NODE_TYPE_STELLAR_MIN_USD_VALUE = JSBI.multiply(
+  JSBI.BigInt(10000),
+  JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(18))
+) // 10000
+export const NODE_TYPE_PLANETARY_MIN_USD_VALUE = JSBI.multiply(
+  JSBI.BigInt(1000),
+  JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(18))
+) // 1000
