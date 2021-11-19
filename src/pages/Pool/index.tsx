@@ -151,7 +151,7 @@ export default function Pool() {
           <CardNoise />
         </VoteCard>
 
-        {!v2IsLoading && allV2PairsWithLiquidity.length > 0 ? <NodeType pairs={allV2PairsWithLiquidity} /> : null}
+        {!v2IsLoading ? <NodeType pairs={allV2PairsWithLiquidity} /> : null}
 
         <AutoColumn gap="lg" justify="center">
           <AutoColumn gap="lg" style={{ width: '100%' }}>
