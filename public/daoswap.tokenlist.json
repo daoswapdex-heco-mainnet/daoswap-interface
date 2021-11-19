@@ -147,7 +147,15 @@
       "symbol": "HBCH",
       "decimals": 18,
       "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 128,
+      "address": "0x0BDe532913915cb6E2F0467b8E46E286cfCFB2bb",
+      "name": "Heco-Peg AXS Token",
+      "symbol": "AXS",
+      "decimals": 18,
+      "logoURI": "https://app.heco.daoswap.cc/daoswap.svg"
     }
   ],
-  "version": { "major": 0, "minor": 0, "patch": 8 }
+  "version": { "major": 0, "minor": 0, "patch": 9 }
 }
