@@ -29,10 +29,28 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
           <CloseIcon onClick={onDismiss} />
         </RowBetween>
         <AutoColumn gap="auto" justify={'start'}>
+          {/* <Text fontWeight={500} fontSize={14} margin={10}>
+            {t(
+              '1, The first liquidity mining will end on November 23, 2021 at 11&#58;00 am, the following pools will be moved to "Closed", please take out your liquidity LP in time to participate in the second liquidity mining. The second phase of liquidity mining will start on November 26, 2021 at 11&#58;00 am.'
+            )}
+            <br />
+            USDT/DAO，USDT/ETH，USDT/HFIL，USDT/HT。
+          </Text> */}
           <Text fontWeight={500} fontSize={14} margin={10}>
             {t(
-              '1, The first liquidity mining will be opened from November 9, 2021 at 11&#58;00 AM to November 23, 2021 at 11&#58;00 AM for the following mining pools.'
+              '1, The first liquidity mining will end on November 23, 2021 at 11&#58;00 am, after which the pool will be moved to the "Closed" page.'
             )}
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('(1), Please withdraw your liquidity LP in time to participate in the second liquidity mining.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t(
+                '(2), The first phase of liquidity mining (5k-10k DAO) and competitive mining (50k-100k DST) will be opened at the same time as the first mining session ends.'
+              )}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('(3), The second phase of liquidity mining will start on November 26, 2021 at 11am.')}
+            </Text>
             <br />
             USDT/DAO，USDT/ETH，USDT/HFIL，USDT/HT。
           </Text>

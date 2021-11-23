@@ -327,7 +327,10 @@
 
   "Announcement": "公告",
   "You have a new announcement": "你有新的公告",
-  "1, The first liquidity mining will be opened from November 9, 2021 at 11&#58;00 AM to November 23, 2021 at 11&#58;00 AM for the following mining pools.": "1，首次流动性挖矿将于2021年11月9日上午11点至2021年11月23日上午11点，针对以下矿池开启。",
+  "1, The first liquidity mining will end on November 23, 2021 at 11&#58;00 am, after which the pool will be moved to the \"Closed\" page.": "1，首次流动性挖矿将于2021年11月23日上午11点结束，结束后的矿池将移至“已结束”页面。",
+  "(1), Please withdraw your liquidity LP in time to participate in the second liquidity mining.": "(1), 请及时取出你的流动性LP以便参与第二期流动性挖矿矿。",
+  "(2), The first phase of liquidity mining (5k-10k DAO) and competitive mining (50k-100k DST) will be opened at the same time as the first mining session ends.": "(2), 首矿结束的同时，将开启第一期算力挖矿（本期将空投5千-1万枚DAO）与竞争挖矿（本期将空投5万-10万枚DST）。",
+  "(3), The second phase of liquidity mining will start on November 26, 2021 at 11am.": "(3), 第二期流动性挖矿将于2021年11月26日上午11点开始。",
   "2, Hash mining and competitive mining open simultaneously with liquidity mining for.": "2，算力挖矿与竞争挖矿随着流动性挖矿同时开启：",
   "Become a planetary/stellar node, invite more people to participate in liquidity mining to accumulate arithmetic power, and then participate in arithmetic mining when liquidity mining ends.": "成为行星/恒星节点，邀请更多人参加流动性挖矿积攒算力，等流动性挖矿结束参加算力挖矿。",
   "Note&#58; Hash and competitive mining will be counted within 3 business days after the liquidity mining ends (after 11am on November 23rd). After the end of liquidity mining, liquidity LP needs to be taken out from the reward pool in order to be used as valid arithmetic. So please prompt the invited community members to take out the liquidity LP instantly to avoid missing the arithmetic mining.": "注意事项：算力与竞争挖矿将在流动性挖矿结束后（11月23日上午11点后）的3个工作日内统计完成。流动性挖矿结束后，需要将流动性LP从奖励池中取出，才能作为有效算力。所以请提示邀请的社区成员即时取出流动性LP，以免错过算力挖矿。",
