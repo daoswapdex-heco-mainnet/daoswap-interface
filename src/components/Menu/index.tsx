@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { BookOpen, Info, MessageCircle, PieChart, Link } from 'react-feather'
+import { BookOpen, Info, MessageCircle, PieChart, Link, Gift, Layers } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
@@ -51,7 +51,7 @@ const StyledMenu = styled.div`
 `
 
 const MenuFlyout = styled.span`
-  min-width: 8.125rem;
+  min-width: 13.125rem;
   background-color: ${({ theme }) => theme.bg3};
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04),
     0px 24px 32px rgba(0, 0, 0, 0.01);
@@ -66,7 +66,7 @@ const MenuFlyout = styled.span`
   z-index: 100;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
-    top: -14.25rem;
+    top: -18.25rem;
   `};
 `
 
@@ -137,6 +137,14 @@ export default function Menu() {
           <MenuItemHref id="link" href="https://bridge.heco.daoswap.cc/token/DAO" target="_self">
             <Link size={14} />
             {t('Bridge')}
+          </MenuItemHref>
+          <MenuItemHref id="link" href="https://www.daoswap.cc/hash-mining" target="_self">
+            <Layers size={14} />
+            {t('Hash Mining')}
+          </MenuItemHref>
+          <MenuItemHref id="link" href="https://www.daoswap.cc/competition-mining" target="_self">
+            <Gift size={14} />
+            {t('Competition Mining')}
           </MenuItemHref>
         </MenuFlyout>
       )}
