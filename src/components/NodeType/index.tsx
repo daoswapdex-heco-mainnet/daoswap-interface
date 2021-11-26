@@ -14,9 +14,9 @@ import {
   NODE_TYPE_STELLAR_MIN_USD_VALUE,
   NODE_TYPE_PLANETARY_MIN_USD_VALUE
 } from '../../constants/index'
-import { useStakingContract } from '../../hooks/useContract'
 import { useTokenBalance } from '../../state/wallet/hooks'
-import { useSingleCallResult, NEVER_RELOAD } from '../../state/multicall/hooks'
+import { useMultipleContractSingleData } from '../../state/multicall/hooks'
+import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import QuestionHelper from '../QuestionHelper'
 
 const EmptyProposals = styled.div`
@@ -33,6 +33,7 @@ export function NodeType({ pairs }: { pairs: Pair[] }) {
   const { t } = useTranslation()
   const theme = useContext(ThemeContext)
   const { account } = useActiveWeb3React()
+  // const account = '0x7d3dE024dEB70741c6Dfa0FaD57775A47C227AE2'
 
   // Node Info Get
   // get usdt-dao pair balance in pool
@@ -51,11 +52,23 @@ export function NodeType({ pairs }: { pairs: Pair[] }) {
     [pairs, nodeTypePairLiquidityToken]
   )
   const userPoolBalance = useTokenBalance(account ?? undefined, nodeTypePairLiquidityToken)
-  // get usdt-dao balance in DAO Liquidity pool
-  const stakingContract = useStakingContract(USDT_DAO_STAKING_REWARDS_ADDRESS)
-  const { result } = useSingleCallResult(stakingContract, 'balanceOf', [account ?? undefined], NEVER_RELOAD)
   const userPoolBalanceNumber = JSBI.BigInt(userPoolBalance ? userPoolBalance.raw.toString() : 0)
-  const userLiquidityPoolBalanceNumber = JSBI.BigInt(result ? result.toString() : 0)
+  // get usdt-dao balance in DAO Liquidity pool
+  const accountArg = useMemo(() => [account ?? undefined], [account])
+  // get all the info from the staking rewards contracts
+  const balances = useMultipleContractSingleData(
+    USDT_DAO_STAKING_REWARDS_ADDRESS,
+    STAKING_REWARDS_INTERFACE,
+    'balanceOf',
+    accountArg
+  )
+  let userLiquidityPoolBalanceNumber = JSBI.BigInt(0)
+  if (balances.length > 0) {
+    balances.map(balance => {
+      userLiquidityPoolBalanceNumber = JSBI.add(userLiquidityPoolBalanceNumber, JSBI.BigInt(balance?.result?.[0] ?? 0))
+      return balance
+    })
+  }
   const userLiquidityPoolBalance = JSBI.add(userPoolBalanceNumber, userLiquidityPoolBalanceNumber)
   let NodeTypeName = 'None'
   if (JSBI.greaterThanOrEqual(userLiquidityPoolBalance, NODE_TYPE_STELLAR_MIN_USD_VALUE)) {
