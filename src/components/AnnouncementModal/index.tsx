@@ -36,7 +36,7 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
             <br />
             USDT/DAO，USDT/ETH，USDT/HFIL，USDT/HT。
           </Text> */}
-          <Text fontWeight={500} fontSize={14} margin={10}>
+          {/* <Text fontWeight={500} fontSize={14} margin={10}>
             {t(
               '1, The first liquidity mining will end on November 23, 2021 at 11&#58;00 am, after which the pool will be moved to the "Closed" page.'
             )}
@@ -53,6 +53,19 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
             </Text>
             <br />
             USDT/DAO，USDT/ETH，USDT/HFIL，USDT/HT。
+          </Text> */}
+          <Text fontWeight={500} fontSize={14} margin={10}>
+            {t(
+              '1, Phase 2 liquidity mining officially begins at Period&#58; November 26, 2021, 11&#58;00 am to December 24, 2021, 11&#58;00 am'
+            )}
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('Mining Pools&#58; USDT-DAO, USDT-ETH, USDT-HFIL, USDT-HT, USDT-UNI, USDT-MDX, USDT-HBCH, USDT-HLTC')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t(
+                'Note&#58; If you have not yet submitted your historical LPs, you can do so on the "Ended" page and then transfer them to a new liquidity pool.'
+              )}
+            </Text>
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
             2, {t('About Node')}:

@@ -36,6 +36,34 @@ export const HFIL = new Token(
   'Heco-Peg HFIL Token'
 )
 export const HT = new Token(ChainId.HECO_MAINNET, '0x5545153CCFcA01fbd7Dd11C0b23ba694D9509A6F', 18, 'HT', 'Wrapped HT')
+export const HECO_UNI = new Token(
+  ChainId.HECO_MAINNET,
+  '0x22C54cE8321A4015740eE1109D9cBc25815C46E6',
+  18,
+  'UNI',
+  'Heco-Peg UNI Token'
+)
+export const MDX = new Token(
+  ChainId.HECO_MAINNET,
+  '0x25D2e80cB6B86881Fd7e07dd263Fb79f4AbE033c',
+  18,
+  'MDX',
+  'Heco-Peg MDX Token'
+)
+export const HBCH = new Token(
+  ChainId.HECO_MAINNET,
+  '0xeF3CEBD77E0C52cb6f60875d9306397B5Caca375',
+  18,
+  'HBCH',
+  'Heco-Peg HBCH Token'
+)
+export const HLTC = new Token(
+  ChainId.HECO_MAINNET,
+  '0xecb56cf772B5c9A6907FB7d32387Da2fCbfB63b4',
+  18,
+  'HLTC',
+  'Heco-Peg HLTC Token'
+)
 // export const COMP = new Token(ChainId.MAINNET, '0xc00e94Cb662C3520282E6f5717214004A7f26888', 18, 'COMP', 'Compound')
 // export const MKR = new Token(ChainId.MAINNET, '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2', 18, 'MKR', 'Maker')
 // export const AMPL = new Token(ChainId.MAINNET, '0xD46bA6D942050d489DBd938a2C909A5d5039A161', 9, 'AMPL', 'Ampleforth')
