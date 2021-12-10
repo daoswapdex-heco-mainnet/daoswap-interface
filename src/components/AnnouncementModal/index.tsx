@@ -11,6 +11,7 @@ import { useTranslation } from 'react-i18next'
 const Wrapper = styled.div`
   width: 100%;
   max-width: 420px;
+  overflow-y: auto;
 `
 const Section = styled(AutoColumn)`
   padding: 24px;
@@ -29,31 +30,6 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
           <CloseIcon onClick={onDismiss} />
         </RowBetween>
         <AutoColumn gap="auto" justify={'start'}>
-          {/* <Text fontWeight={500} fontSize={14} margin={10}>
-            {t(
-              '1, The first liquidity mining will end on November 23, 2021 at 11&#58;00 am, the following pools will be moved to "Closed", please take out your liquidity LP in time to participate in the second liquidity mining. The second phase of liquidity mining will start on November 26, 2021 at 11&#58;00 am.'
-            )}
-            <br />
-            USDT/DAO，USDT/ETH，USDT/HFIL，USDT/HT。
-          </Text> */}
-          {/* <Text fontWeight={500} fontSize={14} margin={10}>
-            {t(
-              '1, The first liquidity mining will end on November 23, 2021 at 11&#58;00 am, after which the pool will be moved to the "Closed" page.'
-            )}
-            <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('(1), Please withdraw your liquidity LP in time to participate in the second liquidity mining.')}
-            </Text>
-            <Text fontWeight={500} fontSize={14} margin={10}>
-              {t(
-                '(2), The first phase of liquidity mining (5k-10k DAO) and competitive mining (50k-100k DST) will be opened at the same time as the first mining session ends.'
-              )}
-            </Text>
-            <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('(3), The second phase of liquidity mining will start on November 26, 2021 at 11am.')}
-            </Text>
-            <br />
-            USDT/DAO，USDT/ETH，USDT/HFIL，USDT/HT。
-          </Text> */}
           <Text fontWeight={500} fontSize={14} margin={10}>
             {t(
               '1, Phase 2 liquidity mining officially begins at Period&#58; November 26, 2021, 11&#58;00 am to December 24, 2021, 11&#58;00 am'
@@ -84,24 +60,30 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
             </Text>
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('Aurora CAC, effective on November 17, 2021.')}
-          </Text>
-          {/* <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('2, Hash mining and competitive mining open simultaneously with liquidity mining for.')}
-            <br />
-            {t(
-              'Become a planetary/stellar node, invite more people to participate in liquidity mining to accumulate arithmetic power, and then participate in arithmetic mining when liquidity mining ends.'
-            )}
-            <br />
-            {t(
-              'Note&#58; Hash and competitive mining will be counted within 3 business days after the liquidity mining ends (after 11am on November 23rd). After the end of liquidity mining, liquidity LP needs to be taken out from the reward pool in order to be used as valid arithmetic. So please prompt the invited community members to take out the liquidity LP instantly to avoid missing the arithmetic mining.'
-            )}
+            {t('3, Hash and Competitive Mining')}:
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('The 2nd period of Arithmetic and Competitive Mining has ended on December 10, 2021 at 11&#58;00.')}
+              <Text fontWeight={500} fontSize={14} margin={10}>
+                {t('The statistic period is&#58; November 26, 2021 11&#58;00 to December 10, 2021 11&#58;00.')}
+              </Text>
+              <Text fontWeight={500} fontSize={14} margin={10}>
+                {t('The reward will be issued on December 12th, 2021, please visit the official website to check.')}
+              </Text>
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t(
+                'The 3rd period of hash and Competition Mining has started on December 10, 2021 11&#58;00 and will end on December 24, 2021 11&#58;00.'
+              )}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t(
+                'Starting from the 2nd period of Arithmetic Mining, the Arithmetic value of the added part will be calculated at 200% according to the counted Arithmetic value, and the count of unchanged or decreased Arithmetic will remain unchanged at 100%.'
+              )}
+            </Text>
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            {t(
-              '3, DAOSWAP trading paris increased to&#58; DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO.'
-            )}
-          </Text> */}
+            {t('Aurora CAC, effective on November 17, 2021.')}
+          </Text>
         </AutoColumn>
       </Section>
     </Wrapper>
