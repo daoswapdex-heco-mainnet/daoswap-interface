@@ -362,5 +362,12 @@
   "1, Planet and Stellar node status will be determined by the number of DAO/USDT pool liquidity provider certificates (LP) held.": "1, Planet and Stellar node status will be determined by the number of DAO/USDT pool liquidity provider certificates (LP) held.",
   "2, Planet nodes need >=1000 LP and Stellar need >=10000 LP.": "2, Planet nodes need >=1000 LP and Stellar need >=10000 LP.",
   "3, The above criteria are valid within DAO price <= 30USDT, after >= 30USDT it will be decided by community vote (whether to consider lowering LP value criteria).": "3, The above criteria are valid within DAO price <= 30USDT, after >= 30USDT it will be decided by community vote (whether to consider lowering LP value criteria).",
-  "Aurora CAC, effective on November 17, 2021.": "Aurora CAC, effective on November 17, 2021."
+  "Aurora CAC, effective on November 17, 2021.": "Aurora CAC, effective on November 17, 2021.",
+
+  "3, Hash and Competitive Mining": "3, Hash and Competitive Mining",
+  "The 2nd period of Arithmetic and Competitive Mining has ended on December 10, 2021 at 11&#58;00.": "The 2nd period of Arithmetic and Competitive Mining has ended on December 10, 2021 at 11:00.",
+  "The statistic period is&#58; November 26, 2021 11&#58;00 to December 10, 2021 11&#58;00.": "The statistic period is: November 26, 2021 11:00 to December 10, 2021 11:00.",
+  "The reward will be issued on December 12th, 2021, please visit the official website to check.": "The reward will be issued on December 12th, 2021, please visit the official website to check.",
+  "The 3rd period of hash and Competition Mining has started on December 10, 2021 11&#58;00 and will end on December 24, 2021 11&#58;00.": "The 3rd period of hash and Competition Mining has started on December 10, 2021 11:00 and will end on December 24, 2021 11:00.",
+  "Starting from the 2nd period of Arithmetic Mining, the Arithmetic value of the added part will be calculated at 200% according to the counted Arithmetic value, and the count of unchanged or decreased Arithmetic will remain unchanged at 100%.": "Starting from the 2nd period of Arithmetic Mining, the Arithmetic value of the added part will be calculated at 200% according to the counted Arithmetic value, and the count of unchanged or decreased Arithmetic will remain unchanged at 100%."
 }
