@@ -32,57 +32,56 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
         <AutoColumn gap="auto" justify={'start'}>
           <Text fontWeight={500} fontSize={14} margin={10}>
             {t(
-              '1, Phase 2 liquidity mining officially begins at Period&#58; November 26, 2021, 11&#58;00 am to December 24, 2021, 11&#58;00 am'
+              '1, Phase 3 liquidity mining officially starts&#58; Time&#58; December 27, 2021, 11&#58;00 am to January 10, 2022, 11&#58;00 am'
             )}
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('Mining Pools&#58; USDT-DAO, USDT-ETH, USDT-HFIL, USDT-HT, USDT-UNI, USDT-MDX, USDT-HBCH, USDT-HLTC')}
+              {t(
+                'Mining pools&#58; USDT-DAO, USDT-ETH, USDT-HFIL, USDT-HT, USDT-UNI, USDT-MDX, USDT-HBCH, USDT-HLTC, USDT-MANA, USDT-DOT, USDT-LINK'
+              )}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t(
-                'Note&#58; If you have not yet submitted your historical LPs, you can do so on the "Ended" page and then transfer them to a new liquidity pool.'
+                'Note&#58; If you have not yet submitted your LPs for historical mining, you can submit them on the "Closed" page and then transfer them to the new liquidity mining pool.'
               )}
             </Text>
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            2, {t('About Node')}:
+            {t('2, About the node description&#58;')}
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t(
-                '1, Planet and Stellar node status will be determined by the number of DAO/USDT pool liquidity provider certificates (LP) held.'
+                '1, The status of planetary and stellar nodes will be determined by the number of DAO/USDT pool liquidity certificates (LPs) held.'
               )}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('2, Planet nodes need >=1000 LP and Stellar need >=10000 LP.')}
+              {t('2, Planetary nodes need >=1000 LP and Stellar nodes need >=10000 LP.')}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t(
-                '3, The above criteria are valid within DAO price <= 30USDT, after >= 30USDT it will be decided by community vote (whether to consider lowering LP value criteria).'
-              )}
-            </Text>
-          </Text>
-          <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('3, Hash and Competitive Mining')}:
-            <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('The 2nd period of Arithmetic and Competitive Mining has ended on December 10, 2021 at 11&#58;00.')}
-              <Text fontWeight={500} fontSize={14} margin={10}>
-                {t('The statistic period is&#58; November 26, 2021 11&#58;00 to December 10, 2021 11&#58;00.')}
-              </Text>
-              <Text fontWeight={500} fontSize={14} margin={10}>
-                {t('The reward will be issued on December 12th, 2021, please visit the official website to check.')}
-              </Text>
-            </Text>
-            <Text fontWeight={500} fontSize={14} margin={10}>
-              {t(
-                'The 3rd period of hash and Competition Mining has started on December 10, 2021 11&#58;00 and will end on December 24, 2021 11&#58;00.'
-              )}
-            </Text>
-            <Text fontWeight={500} fontSize={14} margin={10}>
-              {t(
-                'Starting from the 2nd period of Arithmetic Mining, the Arithmetic value of the added part will be calculated at 200% according to the counted Arithmetic value, and the count of unchanged or decreased Arithmetic will remain unchanged at 100%.'
+                '3, the above criteria is valid within DAO price <= 30U, when >= 30U after the community vote to decide (whether to consider reducing the LP value criteria).'
               )}
             </Text>
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('Aurora CAC, effective on November 17, 2021.')}
+            {t('3, Hash and competitive mining.')}
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('The 3rd period of Hash and Competitive Mining has ended on December 24, 2021 at 11#58;00.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('The statistical period is#58; December 10, 2021 11#58;00 to December 24, 2021 11#58;00.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('The reward has been issued on Dec 26th, 2021, please visit the official website to check.')}
+            </Text>
+          </Text>
+          <Text fontWeight={500} fontSize={14} margin={10}>
+            {t(
+              'The 4th period of hash power and competitive mining has started on December 24, 2021 11#58;00 and will end on January 7, 2022 11#58;00.'
+            )}
+          </Text>
+          <Text fontWeight={500} fontSize={14} margin={10}>
+            {t(
+              'The added part of the arithmetic value is calculated at 200%, and the unincreased or reduced arithmetic power is still counted at 100% unchanged.'
+            )}
           </Text>
         </AutoColumn>
       </Section>

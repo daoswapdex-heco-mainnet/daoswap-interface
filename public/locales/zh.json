@@ -354,5 +354,19 @@
   "The statistic period is&#58; November 26, 2021 11&#58;00 to December 10, 2021 11&#58;00.": "统计周期为：2021年11月26 11:00至2021年12月10号 11:00。",
   "The reward will be issued on December 12th, 2021, please visit the official website to check.": "奖励将于2021年12月12号发放，请登陆官网查看。",
   "The 3rd period of hash and Competition Mining has started on December 10, 2021 11&#58;00 and will end on December 24, 2021 11&#58;00.": "第3期算力与竞争挖矿已于2021年12月10 11:00开始，将于2021年12月24 11:00结束。",
-  "Starting from the 2nd period of Arithmetic Mining, the Arithmetic value of the added part will be calculated at 200% according to the counted Arithmetic value, and the count of unchanged or decreased Arithmetic will remain unchanged at 100%.": "从第2期算力挖矿开始，按统计的算力值，新增部分的算力值按200%计算，未增加或减少算力仍按100%统计不变。"
+  "Starting from the 2nd period of Arithmetic Mining, the Arithmetic value of the added part will be calculated at 200% according to the counted Arithmetic value, and the count of unchanged or decreased Arithmetic will remain unchanged at 100%.": "从第2期算力挖矿开始，按统计的算力值，新增部分的算力值按200%计算，未增加或减少算力仍按100%统计不变。",
+  
+  "1, Phase 3 liquidity mining officially starts&#58; Time&#58; December 27, 2021, 11&#58;00 am to January 10, 2022, 11&#58;00 am": "1，第3期流动性挖矿正式开始：时间：2021年12月27日上午11点至2022年1月10日上午11点",
+  "Mining pools&#58; USDT-DAO, USDT-ETH, USDT-HFIL, USDT-HT, USDT-UNI, USDT-MDX, USDT-HBCH, USDT-HLTC, USDT-MANA, USDT-DOT, USDT-LINK": "矿池：USDT-DAO，USDT-ETH，USDT-HFIL，USDT-HT，USDT-UNI，USDT-MDX，USDT-HBCH，USDT-HLTC，USDT-MANA，USDT-DOT，USDT-LINK",
+  "Note&#58; If you have not yet submitted your LPs for historical mining, you can submit them on the \"Closed\" page and then transfer them to the new liquidity mining pool.": "注意：历史挖矿的LP还未提出的可以在\"已结束\"页面提出，提出后再转至新流动性挖矿矿池。",
+  "2, About the node description&#58;": "2, 关于节点说明:",
+  "1, The status of planetary and stellar nodes will be determined by the number of DAO/USDT pool liquidity certificates (LPs) held.": "1，行星与恒星节点身份将由所持有DAO/USDT池流动性证明（LP）数量判定。",
+  "2, Planetary nodes need >=1000 LP and Stellar nodes need >=10000 LP.": "2，行星节点需要>=1000 LP，恒星需要>=10000 LP。",
+  "3, the above criteria is valid within DAO price <= 30U, when >= 30U after the community vote to decide (whether to consider reducing the LP value criteria).": "3，上述标准在DAO价格<=30U以内有效，当>=30U后由社区投票决定（是否考虑降低LP值标准）。",
+  "3, Hash and competitive mining.": "3，算力与竞争挖矿：",
+  "The 3rd period of Hash and Competitive Mining has ended on December 24, 2021 at 11#58;00.": "第3期算力与竞争挖矿已于2021年12月24号 11:00结束。",
+  "The statistical period is#58; December 10, 2021 11#58;00 to December 24, 2021 11#58;00.": "统计周期为：2021年12月10 11:00至2021年12月24号 11:00。",
+  "The reward has been issued on Dec 26th, 2021, please visit the official website to check.": "奖励已于2021年12月26号发放，请登陆官网查看。",
+  "The 4th period of hash power and competitive mining has started on December 24, 2021 11#58;00 and will end on January 7, 2022 11#58;00.": "第4期算力与竞争挖矿已于2021年12月24 11:00开始，将于2022年1月7 11:00结束。",
+  "The added part of the arithmetic value is calculated at 200%, and the unincreased or reduced arithmetic power is still counted at 100% unchanged.": "新增部分的算力值按200%计算，未增加或减少算力仍按100%统计不变。"
 }
