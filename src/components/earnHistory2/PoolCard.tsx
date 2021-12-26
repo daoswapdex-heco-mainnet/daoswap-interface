@@ -6,7 +6,7 @@ import { TYPE, StyledInternalLink } from '../../theme'
 import DoubleCurrencyLogo from '../DoubleLogo'
 import { ETHER, JSBI, TokenAmount } from '@daoswapdex-heco-mainnet/daoswap-sdk'
 import { ButtonPrimary } from '../Button'
-import { StakingInfo } from '../../state/stakeHistory/hooks'
+import { StakingInfo } from '../../state/stakeHistory2/hooks'
 import { useColor } from '../../hooks/useColor'
 import { currencyId } from '../../utils/currencyId'
 import { Break, CardNoise, CardBGImage } from './styled'
@@ -142,7 +142,7 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
         </TYPE.white>
 
         <StyledInternalLink
-          to={`/dao-history/${currencyId(currency0)}/${currencyId(currency1)}`}
+          to={`/dao-history-2/${currencyId(currency0)}/${currencyId(currency1)}`}
           style={{ width: '100%' }}
         >
           <ButtonPrimary padding="8px" borderRadius="8px">
