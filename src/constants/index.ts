@@ -64,6 +64,27 @@ export const HLTC = new Token(
   'HLTC',
   'Heco-Peg HLTC Token'
 )
+export const MANA = new Token(
+  ChainId.HECO_MAINNET,
+  '0x09006b66d89e5213Fc173403AACBA30620A91F4e',
+  18,
+  'MANA',
+  'Heco-Peg MANA Token'
+)
+export const HDOT = new Token(
+  ChainId.HECO_MAINNET,
+  '0xA2c49cEe16a5E5bDEFDe931107dc1fae9f7773E3',
+  18,
+  'HDOT',
+  'Heco-Peg HDOT Token'
+)
+export const LINK = new Token(
+  ChainId.HECO_MAINNET,
+  '0x9e004545c59D359F6B7BFB06a26390b087717b42',
+  18,
+  'LINK',
+  'Heco-Peg LINK Token'
+)
 // export const COMP = new Token(ChainId.MAINNET, '0xc00e94Cb662C3520282E6f5717214004A7f26888', 18, 'COMP', 'Compound')
 // export const MKR = new Token(ChainId.MAINNET, '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2', 18, 'MKR', 'Maker')
 // export const AMPL = new Token(ChainId.MAINNET, '0xD46bA6D942050d489DBd938a2C909A5d5039A161', 9, 'AMPL', 'Ampleforth')
