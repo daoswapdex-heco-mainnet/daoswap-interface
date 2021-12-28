@@ -26,7 +26,7 @@ const StyledNavLink = styled(NavLink).attrs({
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  font-size: 16px;
+  font-size: 20px;
   width: 100%;
 
   &.${activeClassName} {
@@ -42,18 +42,15 @@ const StyledNavLink = styled(NavLink).attrs({
   }
 `
 
-export function StakeTabs({ active }: { active: 'dao' | 'dao-history' | 'dao-history-2' }) {
+export function NodeTabs({ active }: { active: 'staking-lp' | 'staking-single' }) {
   const { t } = useTranslation()
   return (
     <Tabs style={{ width: '100%' }}>
-      <StyledNavLink id={`dao-nav-link`} to={'/dao'} isActive={() => active === 'dao'}>
-        {t('DAO Stake Activity')}
+      <StyledNavLink id={`staking-lp-nav-link`} to={'/staking-lp'} isActive={() => active === 'staking-lp'}>
+        {t('Node Staking')}
       </StyledNavLink>
-      <StyledNavLink id={`dao-history-nav-link`} to={'/dao-history'} isActive={() => active === 'dao-history'}>
-        {t('DAO Stake Ended')}
-      </StyledNavLink>
-      <StyledNavLink id={`dao-history-nav-link`} to={'/dao-history-2'} isActive={() => active === 'dao-history-2'}>
-        {t('DAO Stake Ended 2')}
+      <StyledNavLink id={`staking-single-nav-link`} to={'/staking-single'} isActive={() => active === 'staking-single'}>
+        {t('DAO Staking')}
       </StyledNavLink>
     </Tabs>
   )

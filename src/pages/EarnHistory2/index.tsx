@@ -75,7 +75,7 @@ export default function Earn() {
         </DataCard>
       </TopSection>
 
-      <StakeTabs active={'doi-history-2'} />
+      <StakeTabs active={'dao-history-2'} />
 
       <AutoColumn gap="lg" style={{ width: '100%', maxWidth: '720px' }}>
         <DataRow style={{ alignItems: 'baseline' }}>
