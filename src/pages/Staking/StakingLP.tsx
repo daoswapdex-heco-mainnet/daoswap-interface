@@ -6,7 +6,7 @@ import { RowBetween } from '../../components/Row'
 import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earnHistory/styled'
 import { useTranslation } from 'react-i18next'
 import PoolCard from '../../components/staking/PoolCardForLP'
-// import { NodeTabs } from '../../components/NavigationTabs/node'
+import { NodeTabs } from '../../components/NavigationTabs/node'
 
 const PageWrapper = styled(AutoColumn)`
   max-width: 640px;
@@ -66,7 +66,7 @@ export default function StakingLP() {
         </DataCard>
       </TopSection>
 
-      {/* <NodeTabs active={'staking-lp'} /> */}
+      <NodeTabs active={'staking-lp'} />
 
       <AutoColumn gap="lg" style={{ width: '100%', maxWidth: '720px' }}>
         <PoolSection>
