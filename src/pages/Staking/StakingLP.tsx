@@ -6,8 +6,7 @@ import { RowBetween } from '../../components/Row'
 import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earnHistory/styled'
 import { useTranslation } from 'react-i18next'
 import PoolCard from '../../components/staking/PoolCardForLP'
-import { NodeTabs } from '../../components/NavigationTabs/node'
-import { useActiveWeb3React } from '../../hooks'
+// import { NodeTabs } from '../../components/NavigationTabs/node'
 
 const PageWrapper = styled(AutoColumn)`
   max-width: 640px;
@@ -30,30 +29,17 @@ const PoolSection = styled.div`
 
 export default function StakingLP() {
   const { t } = useTranslation()
-  const { account } = useActiveWeb3React()
 
-  // TODO: is display staking rewards info list for specical address
-  const whiteList = [
-    '0x7d3dE024dEB70741c6Dfa0FaD57775A47C227AE2',
-    '0x3DdcFc89B4DD2b33d9a8Ca0F60180527E9810D4B',
-    '0x9b1d0c9c1aE96011776e6786b4Efe884665918D2',
-    '0xa9bB710996d6ed61B83a5EAB583bAe683199c2de'
+  const stakingList: any[] = [
+    {
+      period: 1,
+      name: 'StakingLPPeriod1',
+      capAmount: 500000,
+      apr: 120,
+      aprDAO: 60,
+      aprDST: 60
+    }
   ]
-  const inWhiteList = whiteList.filter(item => item === account)
-
-  const stakingList: any[] =
-    inWhiteList.length <= 0
-      ? []
-      : [
-          {
-            period: 1,
-            name: 'StakingLPPeriod1',
-            capAmount: 500000,
-            apr: 120,
-            aprDAO: 60,
-            aprDST: 60
-          }
-        ]
 
   return (
     <PageWrapper gap="lg" justify="center">
@@ -80,7 +66,7 @@ export default function StakingLP() {
         </DataCard>
       </TopSection>
 
-      <NodeTabs active={'staking-lp'} />
+      {/* <NodeTabs active={'staking-lp'} /> */}
 
       <AutoColumn gap="lg" style={{ width: '100%', maxWidth: '720px' }}>
         <PoolSection>
