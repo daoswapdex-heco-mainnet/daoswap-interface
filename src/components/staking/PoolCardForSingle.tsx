@@ -116,6 +116,14 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: any }) {
             </ButtonPrimary>
           </StyledLink>
         </BottomSection>
+        <BottomSection showBackground={true} style={{ textAlign: 'center', paddingTop: 0 }}>
+          <StyledLink
+            href={`https://staking.heco.daoswap.cc/staking/single/${stakingInfo.period}/history`}
+            style={{ width: '100%' }}
+          >
+            {t('Stake History')}
+          </StyledLink>
+        </BottomSection>
       </>
     </Wrapper>
   )
