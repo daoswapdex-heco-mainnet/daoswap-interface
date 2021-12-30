@@ -47,8 +47,8 @@ export default function StakingLP() {
       : [
           {
             period: 1,
-            name: 'StakingPeriod1',
-            capAmount: 50000,
+            name: 'StakingLPPeriod1',
+            capAmount: 500000,
             apr: 120,
             aprDAO: 60,
             aprDST: 60
