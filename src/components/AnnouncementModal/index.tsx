@@ -31,8 +31,38 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
         </RowBetween>
         <AutoColumn gap="auto" justify={'start'}>
           <Text fontWeight={500} fontSize={14} margin={10}>
+            {t('1, HS node stake')}
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('Phase 1 will start on December 31, 2021 at 11#58;00.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('Total 365-day cycle limit of 500,000 DAO/USDT DLT.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('Single address limit of 1000 - 20000.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('Dual coin (DAO/DST) combined fixed APY of 120%.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('staking tip for cn')}
+            </Text>
+          </Text>
+          <Text fontWeight={500} fontSize={14} margin={10}>
+            {t('2, DAO stake')}
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('365-day cycle pledge to be opened at 11#58;00 on January 1, 2022.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('Dual currency (DAO/DST) combined APY of 60%.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('staking tip for cn')}
+            </Text>
+          </Text>
+          <Text fontWeight={500} fontSize={14} margin={10}>
             {t(
-              '1, Phase 3 liquidity mining officially starts&#58; Time&#58; December 27, 2021, 11&#58;00 am to January 10, 2022, 11&#58;00 am'
+              '3, Phase 3 liquidity mining officially starts&#58; Time&#58; December 27, 2021, 11&#58;00 am to January 10, 2022, 11&#58;00 am'
             )}
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t(
@@ -45,7 +75,7 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
               )}
             </Text>
           </Text>
-          <Text fontWeight={500} fontSize={14} margin={10}>
+          {/* <Text fontWeight={500} fontSize={14} margin={10}>
             {t('2, About the node description&#58;')}
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t(
@@ -60,9 +90,9 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
                 '3, the above criteria is valid within DAO price <= 30U, when >= 30U after the community vote to decide (whether to consider reducing the LP value criteria).'
               )}
             </Text>
-          </Text>
+          </Text> */}
           <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('3, Hash and competitive mining.')}
+            {t('4, Hash and competitive mining.')}
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t('The 3rd period of Hash and Competitive Mining has ended on December 24, 2021 at 11#58;00.')}
             </Text>
