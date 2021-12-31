@@ -12,12 +12,15 @@ import {
   USDT_DAO_PAIR_ADDRESS,
   USDT_DAO_STAKING_REWARDS_ADDRESS,
   NODE_TYPE_STELLAR_MIN_USD_VALUE,
-  NODE_TYPE_PLANETARY_MIN_USD_VALUE
+  NODE_TYPE_PLANETARY_MIN_USD_VALUE,
+  STAKING_LIMIT_FOR_LP_CONTRACT_ADDRESS
 } from '../../constants/index'
 import { useTokenBalance } from '../../state/wallet/hooks'
-import { useMultipleContractSingleData } from '../../state/multicall/hooks'
+import { useMultipleContractSingleData, useSingleContractMultipleData } from '../../state/multicall/hooks'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
+import { STAKING_LP_INTERFACE } from '../../constants/abis/staking-lp'
 import QuestionHelper from '../QuestionHelper'
+import { useTokenContract } from '../../hooks/useContract'
 
 const EmptyProposals = styled.div`
   border: 1px solid ${({ theme }) => theme.text4};
@@ -69,7 +72,42 @@ export function NodeType({ pairs }: { pairs: Pair[] }) {
       return balance
     })
   }
-  const userLiquidityPoolBalance = JSBI.add(userPoolBalanceNumber, userLiquidityPoolBalanceNumber)
+  // get all the info from the staking lp contracts
+  let tokenVestingAddressListArray: string[] = []
+  const tokenVestingAddressList = useMultipleContractSingleData(
+    STAKING_LIMIT_FOR_LP_CONTRACT_ADDRESS,
+    STAKING_LP_INTERFACE,
+    'getTokenVestingAddressByAccount',
+    accountArg
+  )
+  if (tokenVestingAddressList.length > 0) {
+    tokenVestingAddressList.map(tokenVesting => {
+      if (tokenVesting?.result !== undefined) {
+        tokenVestingAddressListArray = tokenVestingAddressListArray.concat(tokenVesting?.result?.[0])
+      }
+      return tokenVesting
+    })
+  }
+  let userLiquidityPoolOfStakingLP = JSBI.BigInt(0)
+  const USDT_DAO_TOKEN_CONTRACT = useTokenContract(USDT_DAO_PAIR_ADDRESS, true)
+  const tokenVestingBalances = useSingleContractMultipleData(
+    USDT_DAO_TOKEN_CONTRACT,
+    'balanceOf',
+    tokenVestingAddressListArray.map(address => [address])
+  )
+
+  if (tokenVestingBalances.length > 0) {
+    tokenVestingBalances.map(balance => {
+      console.info(balance)
+      userLiquidityPoolOfStakingLP = JSBI.add(userLiquidityPoolOfStakingLP, JSBI.BigInt(balance?.result?.[0] ?? 0))
+      return balance
+    })
+  }
+  // judge node type
+  const userLiquidityPoolBalance = JSBI.add(
+    JSBI.add(userPoolBalanceNumber, userLiquidityPoolBalanceNumber),
+    userLiquidityPoolOfStakingLP
+  )
   let NodeTypeName = 'None'
   if (JSBI.greaterThanOrEqual(userLiquidityPoolBalance, NODE_TYPE_STELLAR_MIN_USD_VALUE)) {
     NodeTypeName = 'Stellar'
