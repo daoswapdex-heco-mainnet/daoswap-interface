@@ -81,7 +81,7 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: any }) {
   const { t } = useTranslation()
   const backgroundColor = useColor(undefined)
   return (
-    <Wrapper showBackground={true} bgColor={backgroundColor}>
+    <Wrapper showBackground={stakingInfo.openStatus} bgColor={backgroundColor}>
       <CardBGImage desaturate />
       <CardNoise />
 
@@ -114,10 +114,10 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: any }) {
       <>
         <BottomSection showBackground={true}>
           <StyledLink
-            href={`https://staking.heco.daoswap.cc/staking/lp/${stakingInfo.period}`}
+            href={stakingInfo.openStatus ? `https://staking.heco.daoswap.cc/staking/lp/${stakingInfo.period}` : ''}
             style={{ width: '100%' }}
           >
-            <ButtonPrimary padding="8px" borderRadius="8px">
+            <ButtonPrimary padding="8px" borderRadius="8px" disabled={!stakingInfo.openStatus}>
               {t('Stake')}
             </ButtonPrimary>
           </StyledLink>

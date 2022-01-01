@@ -37,7 +37,8 @@ export default function StakingLP() {
       capAmount: 500000,
       apr: 120,
       aprDAO: 60,
-      aprDST: 60
+      aprDST: 60,
+      openStatus: false
     }
   ]
 

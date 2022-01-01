@@ -37,7 +37,8 @@ export default function StakingSingle() {
       capAmount: 100000,
       apr: 60,
       aprDAO: 30,
-      aprDST: 30
+      aprDST: 30,
+      openStatus: false
     }
   ]
 
