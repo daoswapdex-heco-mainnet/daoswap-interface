@@ -93,6 +93,12 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: any }) {
 
       <StatContainer>
         <RowBetween>
+          <TYPE.white>{t('Cap Amount')}</TYPE.white>
+          <TYPE.white>{stakingInfo.capAmount}</TYPE.white>
+        </RowBetween>
+      </StatContainer>
+      <StatContainer>
+        <RowBetween>
           <TYPE.white>{t('Annual rate')}</TYPE.white>
           <TYPE.white textAlign={'right'}>
             {stakingInfo.apr} %{' '}
