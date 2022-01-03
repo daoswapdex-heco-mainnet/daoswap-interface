@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import { STAKING_GENESIS, REWARDS_DURATION_DAYS } from '../../state/stakeHistory/hooks'
+import { STAKING_GENESIS, REWARDS_DURATION_DAYS } from '../../state/stakeHistory1/hooks'
 import { TYPE } from '../../theme'
 import { useTranslation } from 'react-i18next'
 

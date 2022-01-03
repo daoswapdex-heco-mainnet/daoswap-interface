@@ -314,8 +314,11 @@
   "Claim DAO": "提取DAO",
 
   "DAO Stake Activity": "进行中",
-  "DAO Stake Ended": "已结束(1期)",
+  "DAO Stake Ended": "已结束",
   "DAO Stake Ended 2": "已结束(2期)",
+  "Period": "期数",
+  "DAO Stake Period": "期数",
+  "History Pool": "历史流动池",
 
   "Governace": "治理节点",
   "Pledging DAO to share 0.1% fees of all pool.": "质押DAO成为社区治理节点，分全平台手续费。",

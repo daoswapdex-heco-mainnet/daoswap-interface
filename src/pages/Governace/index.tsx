@@ -3,7 +3,7 @@ import { AutoColumn } from '../../components/Column'
 import styled from 'styled-components'
 import { TYPE } from '../../theme'
 import { RowBetween } from '../../components/Row'
-import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earnHistory/styled'
+import { CardSection, DataCard, CardNoise, CardBGImage } from './styled'
 import { useTranslation } from 'react-i18next'
 
 const PageWrapper = styled(AutoColumn)`

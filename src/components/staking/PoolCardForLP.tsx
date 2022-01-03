@@ -81,7 +81,7 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: any }) {
   const { t } = useTranslation()
   const backgroundColor = useColor(undefined)
   return (
-    <Wrapper showBackground={stakingInfo.openStatus} bgColor={backgroundColor}>
+    <Wrapper showBackground={stakingInfo.openStatus} bgColor={backgroundColor} style={{ display: stakingInfo.display }}>
       <CardBGImage desaturate />
       <CardNoise />
 

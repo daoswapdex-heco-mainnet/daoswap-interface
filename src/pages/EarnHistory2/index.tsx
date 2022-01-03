@@ -2,7 +2,7 @@ import React from 'react'
 import { AutoColumn } from '../../components/Column'
 import styled from 'styled-components'
 import { STAKING_REWARDS_INFO, useStakingInfo } from '../../state/stakeHistory2/hooks'
-import { TYPE, ExternalLink } from '../../theme'
+import { TYPE } from '../../theme'
 import PoolCard from '../../components/earnHistory2/PoolCard'
 import { RowBetween } from '../../components/Row'
 import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earnHistory2/styled'
@@ -60,14 +60,7 @@ export default function Earn() {
                 <TYPE.white fontSize={14}>
                   {t('Deposit your Liquidity Provider tokens to receive DAO, the Daoswap protocol governance token.')}
                 </TYPE.white>
-              </RowBetween>{' '}
-              <ExternalLink
-                style={{ color: 'white', textDecoration: 'underline', display: 'none' }}
-                href="https://uniswap.org/blog/uni/"
-                target="_blank"
-              >
-                <TYPE.white fontSize={14}>{t('Read more about DAO')}</TYPE.white>
-              </ExternalLink>
+              </RowBetween>
             </AutoColumn>
           </CardSection>
           <CardBGImage />
@@ -75,11 +68,13 @@ export default function Earn() {
         </DataCard>
       </TopSection>
 
-      <StakeTabs active={'dao-history-2'} />
+      <StakeTabs active={'dao-history'} />
 
       <AutoColumn gap="lg" style={{ width: '100%', maxWidth: '720px' }}>
         <DataRow style={{ alignItems: 'baseline' }}>
-          <TYPE.mediumHeader style={{ marginTop: '0.5rem' }}>{t('Participating pools')}</TYPE.mediumHeader>
+          <TYPE.mediumHeader style={{ marginTop: '0.5rem' }}>
+            {t('Participating pools')} - {t('Period')} - 2
+          </TYPE.mediumHeader>
           <Countdown exactEnd={stakingInfos?.[0]?.periodFinish} />
         </DataRow>
 
