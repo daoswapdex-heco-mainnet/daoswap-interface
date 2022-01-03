@@ -329,8 +329,11 @@
   "Claim DAO": "Claim DAO",
 
   "DAO Stake Activity": "Activity",
-  "DAO Stake Ended": "Ended(P1)",
+  "DAO Stake Ended": "Ended",
   "DAO Stake Ended 2": "Ended(P2)",
+  "Period": "Period",
+  "DAO Stake Period": "Period",
+  "History Pool": "History Pool",
 
   "Governace": "Governace",
   "Pledging DAO to share 0.1% fees of all pool.": "Pledging DAO to share 0.1% fees of all pool.",
