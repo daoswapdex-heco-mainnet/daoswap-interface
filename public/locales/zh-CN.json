@@ -337,6 +337,7 @@
   "Cap Amount": "封顶额度",
   "StakingLPPeriod1": "一期：质押365天",
   "StakingLPPeriod2": "二期：质押365天",
+  "StakingLPPeriod3": "三期：质押365天",
   "StakingDAOPeriod1": "一期：质押365天",
 
   "Bridge": "跨链桥",
