@@ -42,7 +42,7 @@ const StyledNavLink = styled(NavLink).attrs({
   }
 `
 
-export function StakeTabs({ active }: { active: 'dao' | 'dao-history' | 'dao-history-2' }) {
+export function StakeTabs({ active }: { active: 'dao' | 'dao-history' | 'dao-history-2' | 'dao-history-3' }) {
   const { t } = useTranslation()
   return (
     <Tabs style={{ width: '100%' }}>
@@ -52,9 +52,6 @@ export function StakeTabs({ active }: { active: 'dao' | 'dao-history' | 'dao-his
       <StyledNavLink id={`dao-history-nav-link`} to={'/dao-history'} isActive={() => active === 'dao-history'}>
         {t('DAO Stake Ended')}
       </StyledNavLink>
-      {/* <StyledNavLink id={`dao-history-nav-link`} to={'/dao-history-2'} isActive={() => active === 'dao-history-2'}>
-        {t('DAO Stake Ended 2')}
-      </StyledNavLink> */}
     </Tabs>
   )
 }

@@ -1,10 +1,14 @@
 import React from 'react'
 import { AutoColumn } from '../../components/Column'
 import styled from 'styled-components'
-import { TYPE, StyledInternalLink } from '../../theme'
-import { ButtonPrimary } from '../../components/Button'
+import { STAKING_REWARDS_INFO, useStakingInfo } from '../../state/stakeHistory3/hooks'
+import { TYPE } from '../../theme'
+import PoolCard from '../../components/earnHistory3/PoolCard'
 import { RowBetween } from '../../components/Row'
-import { CardSection, DataCard, CardNoise, CardBGImage } from './styled'
+import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earnHistory3/styled'
+import { Countdown } from './Countdown'
+import Loader from '../../components/Loader'
+import { useActiveWeb3React } from '../../hooks'
 import { useTranslation } from 'react-i18next'
 import { StakeTabs } from '../../components/NavigationTabs/stake'
 
@@ -27,14 +31,19 @@ const PoolSection = styled.div`
   justify-self: center;
 `
 
+// TODO:Daoswap UNI -> DAO
 export default function Earn() {
   const { t } = useTranslation()
+  const { chainId } = useActiveWeb3React()
+  const stakingInfos = useStakingInfo()
 
   const DataRow = styled(RowBetween)`
     ${({ theme }) => theme.mediaWidth.upToSmall`
     flex-direction: column;
   `};
   `
+
+  const stakingRewardsExist = Boolean(typeof chainId === 'number' && (STAKING_REWARDS_INFO[chainId]?.length ?? 0) > 0)
 
   return (
     <PageWrapper gap="lg" justify="center">
@@ -63,26 +72,21 @@ export default function Earn() {
 
       <AutoColumn gap="lg" style={{ width: '100%', maxWidth: '720px' }}>
         <DataRow style={{ alignItems: 'baseline' }}>
-          <TYPE.mediumHeader style={{ marginTop: '0.5rem' }}>{t('History Pool')}</TYPE.mediumHeader>
-          {/* <TYPE.black fontWeight={400}>按期数倒序</TYPE.black> */}
+          <TYPE.mediumHeader style={{ marginTop: '0.5rem' }}>{t('Participating pools')}</TYPE.mediumHeader>
+          <Countdown exactEnd={stakingInfos?.[0]?.periodFinish} />
         </DataRow>
 
         <PoolSection>
-          <StyledInternalLink to={`/dao-history-3`} style={{ width: '100%' }}>
-            <ButtonPrimary padding="8px" borderRadius="8px">
-              {t('DAO Stake Period')} 3
-            </ButtonPrimary>
-          </StyledInternalLink>
-          <StyledInternalLink to={`/dao-history-2`} style={{ width: '100%' }}>
-            <ButtonPrimary padding="8px" borderRadius="8px">
-              {t('DAO Stake Period')} 2
-            </ButtonPrimary>
-          </StyledInternalLink>
-          <StyledInternalLink to={`/dao-history-1`} style={{ width: '100%' }}>
-            <ButtonPrimary padding="8px" borderRadius="8px">
-              {t('DAO Stake Period')} 1
-            </ButtonPrimary>
-          </StyledInternalLink>
+          {stakingRewardsExist && stakingInfos?.length === 0 ? (
+            <Loader style={{ margin: 'auto' }} />
+          ) : !stakingRewardsExist ? (
+            t('No active rewards')
+          ) : (
+            stakingInfos?.map(stakingInfo => {
+              // need to sort by added liquidity here
+              return <PoolCard key={stakingInfo.stakingRewardAddress} stakingInfo={stakingInfo} />
+            })
+          )}
         </PoolSection>
       </AutoColumn>
     </PageWrapper>
