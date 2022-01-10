@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { BookOpen, Info, MessageCircle, PieChart, Link, Gift, Layers } from 'react-feather'
+import { BookOpen, Info, MessageCircle, PieChart, Link, Gift, Layers, DollarSign } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
@@ -66,7 +66,7 @@ const MenuFlyout = styled.span`
   z-index: 100;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
-    top: -18.25rem;
+    top: -21.25rem;
   `};
 `
 
@@ -145,6 +145,10 @@ export default function Menu() {
           <MenuItemHref id="link" href="https://www.daoswap.cc/competition-mining" target="_self">
             <Gift size={14} />
             {t('Competition Mining')}
+          </MenuItemHref>
+          <MenuItemHref id="link" href="https://fee.heco.daoswap.cc" target="_self">
+            <DollarSign size={14} />
+            {t('Fee')}
           </MenuItemHref>
         </MenuFlyout>
       )}
