@@ -400,5 +400,20 @@
   "staking tip for cn": "一次质押，多次多种收益，不定期盲盒空投各类潜力TOKEN。",
   "2, DAO stake": "2，DAO单币质押：",
   "365-day cycle pledge to be opened at 11#58;00 on January 1, 2022.": "365天周期质押将于2022年1月1日 11:00开启；",
-  "Dual currency (DAO/DST) combined APY of 60%.": "双币（DAO/DST）综合固定年化率60%；"
+  "Dual currency (DAO/DST) combined APY of 60%.": "双币（DAO/DST）综合固定年化率60%；",
+
+  "1, Hash and Competition Mining.": "1，算力与竞争挖矿：",
+  "The 4th period of Arithmetic and Competitive Mining has ended on January 7, 2022 at 11#58;00.": "第4期算力与竞争挖矿已于2022年1月7号 11:00结束。",
+  "Statistical period#58; December 24, 2021 11#58;00 to January 7, 2022 11#58;00.": "统计周期为：2021年12月24 11:00至2022年1月7号 11:00。",
+  "Statistics#58; Liquidity mining pool, number of single coin pledges (60%).": "统计内容：流动性挖矿矿池，单币质押数量（60%）。",
+  "The reward has been issued on January 9th, 2022, please visit the official website to check.": "奖励已于2022年1月9号发放，请登陆官网查看。",
+  "The 5th period of counting and competitive mining has started on January 7, 2022 at 11#58;00 and will end on January 21, 2022 at 11#58;00.": "第5期算力与竞争挖矿已于2022年1月7 11:00开始，将于2022年1月21 11:00结束。",
+  "2, Fee share": "2，手续费分成",
+  "For the first fee share, the rewarded pairs are#58;": "第一次手续费分成，奖励的交易对为：",
+  "The total value of USDT is 23,798, which will be distributed to all current pledged one-year planetary/stellar nodes.": "总计价值 23,798 USDT，分给当前所有质押一年期的行星/恒星节点。",
+  "empty info for cn 1": "单币质押数量也将继续计入算力。",
+  "empty info for cn 2": "新增部分的算力值按200%计算，未增加或减少算力仍按100%统计不变。",
+  "empty info for cn 3": "算力最高的恒星本期共分得价值 802.15 USDT的手续费，其中包含DAO/USDT/ETH/HFIL。",
+  "Pick up address#58;": "领取地址："
+
 }

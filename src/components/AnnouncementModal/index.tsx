@@ -17,6 +17,26 @@ const Section = styled(AutoColumn)`
   padding: 24px;
 `
 
+const StyledLink = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  color: ${({ theme }) => theme.primary1};
+  font-weight: 500;
+
+  :hover {
+    text-decoration: underline;
+  }
+
+  :focus {
+    outline: none;
+    text-decoration: underline;
+  }
+
+  :active {
+    text-decoration: none;
+  }
+`
+
 function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
   const { t } = useTranslation()
 
@@ -31,36 +51,59 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
         </RowBetween>
         <AutoColumn gap="auto" justify={'start'}>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('1, HS node stake')}
+            {t('1, Hash and Competition Mining.')}
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('Phase 1 will start on December 31, 2021 at 11#58;00.')}
+              {t('The 4th period of Arithmetic and Competitive Mining has ended on January 7, 2022 at 11#58;00.')}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('Total 365-day cycle limit of 500,000 DAO/USDT DLT.')}
+              {t('Statistical period#58; December 24, 2021 11#58;00 to January 7, 2022 11#58;00.')}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('Single address limit of 1000 - 20000.')}
+              {t('Statistics#58; Liquidity mining pool, number of single coin pledges (60%).')}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('Dual coin (DAO/DST) combined fixed APY of 120%.')}
+              {t('The reward has been issued on January 9th, 2022, please visit the official website to check.')}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('staking tip for cn')}
-            </Text>
-          </Text>
-          <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('2, DAO stake')}
-            <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('365-day cycle pledge to be opened at 11#58;00 on January 1, 2022.')}
+              {t(
+                'The 5th period of counting and competitive mining has started on January 7, 2022 at 11#58;00 and will end on January 21, 2022 at 11#58;00.'
+              )}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('Dual currency (DAO/DST) combined APY of 60%.')}
+              {t('empty info for cn 1')}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('staking tip for cn')}
+              {t('empty info for cn 2')}
             </Text>
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
+            {t('2, Fee share')}
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('For the first fee share, the rewarded pairs are#58;')}
+              <Text fontWeight={500} fontSize={14} margin={10}>
+                {t('USDT/DAO')}
+              </Text>
+              <Text fontWeight={500} fontSize={14} margin={10}>
+                {t('USDT/HFIL')}
+              </Text>
+              <Text fontWeight={500} fontSize={14} margin={10}>
+                {t('USDT/ETH')}
+              </Text>
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t(
+                'The total value of USDT is 23,798, which will be distributed to all current pledged one-year planetary/stellar nodes.'
+              )}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('empty info for cn 3')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('Pick up address#58;')}{' '}
+              <StyledLink href={'https://fee.heco.daoswap.cc'}>https://fee.heco.daoswap.cc</StyledLink>
+            </Text>
+          </Text>
+          {/* <Text fontWeight={500} fontSize={14} margin={10}>
             {t(
               '3, Phase 3 liquidity mining officially starts&#58; Time&#58; December 27, 2021, 11&#58;00 am to January 10, 2022, 11&#58;00 am'
             )}
@@ -74,7 +117,7 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
                 'Note&#58; If you have not yet submitted your LPs for historical mining, you can submit them on the "Closed" page and then transfer them to the new liquidity mining pool.'
               )}
             </Text>
-          </Text>
+          </Text> */}
           {/* <Text fontWeight={500} fontSize={14} margin={10}>
             {t('2, About the node description&#58;')}
             <Text fontWeight={500} fontSize={14} margin={10}>
@@ -91,7 +134,7 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
               )}
             </Text>
           </Text> */}
-          <Text fontWeight={500} fontSize={14} margin={10}>
+          {/* <Text fontWeight={500} fontSize={14} margin={10}>
             {t('4, Hash and competitive mining.')}
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t('The 3rd period of Hash and Competitive Mining has ended on December 24, 2021 at 11#58;00.')}
@@ -112,7 +155,7 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
             {t(
               'The added part of the arithmetic value is calculated at 200%, and the unincreased or reduced arithmetic power is still counted at 100% unchanged.'
             )}
-          </Text>
+          </Text> */}
         </AutoColumn>
       </Section>
     </Wrapper>
