@@ -3,7 +3,7 @@ import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@daoswa
 import { useMemo } from 'react'
 // TODO:Daoswap ERC20
 import { UNI } from '../../constants'
-// import { USDT, ETH, HFIL, HT, HECO_UNI, MDX, HBCH, HLTC, MANA, HDOT, LINK } from '../../constants'
+import { USDT, ETH, HFIL, HT, HECO_UNI, MDX, HBCH, HLTC, MANA, HDOT, LINK } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
@@ -11,10 +11,10 @@ import { tryParseAmount } from '../swap/hooks'
 import { useTranslation } from 'react-i18next'
 
 // TODO:Daoswap Start Time
-export const STAKING_GENESIS = 1640574000
+export const STAKING_GENESIS = 1642215600
 
 // TODO:Daoswap Rewards Duration : unit - day
-export const REWARDS_DURATION_DAYS = 14
+export const REWARDS_DURATION_DAYS = 28
 
 // TODO add staking rewards addresses here
 export const STAKING_REWARDS_INFO: {
@@ -24,50 +24,50 @@ export const STAKING_REWARDS_INFO: {
   }[]
 } = {
   [ChainId.HECO_MAINNET]: [
-    // {
-    //   tokens: [USDT, UNI[ChainId.HECO_MAINNET]],
-    //   stakingRewardAddress: '0x64521114F1d6cc11443A3323D62B78C1a6f219De'
-    // },
-    // {
-    //   tokens: [USDT, ETH],
-    //   stakingRewardAddress: '0xCd0735E70130527A8be4B350282EfF7F7C81493F'
-    // },
-    // {
-    //   tokens: [USDT, HFIL],
-    //   stakingRewardAddress: '0x4CAf830A2409819Fd305db6a6ee65256ddeEFb70'
-    // },
-    // {
-    //   tokens: [USDT, HT],
-    //   stakingRewardAddress: '0x064b19554Ea3129502f75ED6604CAa41A3907D50'
-    // },
-    // {
-    //   tokens: [USDT, HECO_UNI],
-    //   stakingRewardAddress: '0x527a40F20a851319E98C2E054f73F96ed2840d50'
-    // },
-    // {
-    //   tokens: [USDT, MDX],
-    //   stakingRewardAddress: '0x8D788f53Dd56000A12Ab22D9fAb163Bf45Ff3E04'
-    // },
-    // {
-    //   tokens: [USDT, HBCH],
-    //   stakingRewardAddress: '0xf0428f4dD1748f97E04C44fd153ebE73Eb710A67'
-    // },
-    // {
-    //   tokens: [USDT, HLTC],
-    //   stakingRewardAddress: '0xb08F88a4979F8E1F6269394081e9C334d7337E82'
-    // },
-    // {
-    //   tokens: [USDT, MANA],
-    //   stakingRewardAddress: '0x23600d396BFb9EAedBAfBAe35223f96A2fa1D143'
-    // },
-    // {
-    //   tokens: [USDT, HDOT],
-    //   stakingRewardAddress: '0x89Ab83a6494b910083E16E4458bCACb6FBcF9F20'
-    // },
-    // {
-    //   tokens: [USDT, LINK],
-    //   stakingRewardAddress: '0x08023E64C73A7a09073c6Fe395Cb64c7628722c0'
-    // }
+    {
+      tokens: [USDT, UNI[ChainId.HECO_MAINNET]],
+      stakingRewardAddress: '0x79438C8e9660C98845E7Fc8A136D1ff92a75F3Ec'
+    },
+    {
+      tokens: [USDT, ETH],
+      stakingRewardAddress: '0xfE15Eb30C4f7b9a954A606BD57E4E027f63594e4'
+    },
+    {
+      tokens: [USDT, HFIL],
+      stakingRewardAddress: '0x0e5844d40c5896E349b1d8Ba152BA2978D023932'
+    },
+    {
+      tokens: [USDT, HT],
+      stakingRewardAddress: '0xB2dAB73324e0AE818cfDDA456DECAb367Cdec924'
+    },
+    {
+      tokens: [USDT, HECO_UNI],
+      stakingRewardAddress: '0x93C9C4b40b5551a01dbB02D7D7D05f6Ff4585e43'
+    },
+    {
+      tokens: [USDT, MDX],
+      stakingRewardAddress: '0x29390aAcd0F32E18E6a98b84C0ac14d41c85d085'
+    },
+    {
+      tokens: [USDT, HBCH],
+      stakingRewardAddress: '0x78F55552e0892ff4c31d04f2C14f20D3c3F1776E'
+    },
+    {
+      tokens: [USDT, HLTC],
+      stakingRewardAddress: '0x5cD637f1d277165ca3ee3fbF97c00a1f25D37a1D'
+    },
+    {
+      tokens: [USDT, MANA],
+      stakingRewardAddress: '0x840Da5d561e59B05d7414B0d6Cf207171d73a527'
+    },
+    {
+      tokens: [USDT, HDOT],
+      stakingRewardAddress: '0xd8c904aAf8C724b4d6F1c851c6C1F3c2530D746a'
+    },
+    {
+      tokens: [USDT, LINK],
+      stakingRewardAddress: '0x312630f2ddDe30919e39c531187f8fD7a93d3B76'
+    }
   ]
 }
 

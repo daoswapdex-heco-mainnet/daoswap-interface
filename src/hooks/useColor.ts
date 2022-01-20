@@ -9,7 +9,8 @@ async function getColorFromToken(token: Token): Promise<string | null> {
     return Promise.resolve('#FAAB14')
   }
 
-  const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${token.address}/logo.png`
+  const path = 'https://app.heco.daoswap.cc/daoswap.svg'
+  // const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${token.address}/logo.png`
 
   return Vibrant.from(path)
     .getPalette()
