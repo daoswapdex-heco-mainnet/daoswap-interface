@@ -433,7 +433,7 @@
   "2, Phase 4 Node Pledge and Phase 3 Single Coin Pledge.": "2，第四期节点质押与第三期单币质押：",
   "It will be opened on January 23rd, 2022 at 11#58;00 am.": "将于2022年1月23号上午11：00开启。",
   "The fourth node pledge with a cap of 300,000 and an annualized rate of 116% (30% DAO, 70% DST)": "第四期节点质押，上限30万，年化率116%（30%DAO，70%DST）",
-  "Phase 3 single coin pledge, cap 100,000, 116% annualized rate (30% DAO, 70% DST)": "第三期单币质押，上限10万，年化率116%（30%DAO，70%DST）",
+  "Phase 3 single coin pledge, cap 100,000, 58% annualized rate (30% DAO, 70% DST)": "第三期单币质押，上限10万，年化率58%（30%DAO，70%DST）",
   "3, Task 6.": "3，任务6解锁：",
   "Starting with the 5th period of arithmetic and competitive mining, perform task 6#58; reward the number of new nodes within the team according to the team of node identity wallet address (except for existing Genesis and seed nodes.)": "从第5期算力与竞争挖矿开始，执行任务6：根据节点身份钱包地址的团队，奖励团队内新增的节点数量（现有创世与种子节点除外。）",
   "Task 6 rewards only pledged 1-year planets and stars, and those still unpledged are automatically counted as rewards in the next period after pledging. If you need to unlock mission 6, please pledge as soon as possible during the node pledge period, missing the pledge period will not count towards the mission 6 reward.": "任务6只奖励质押1年期的行星与恒星，仍有未质押的在质押后自动计入下一期奖励。需要解锁任务6的在节点质押开启的周期内请尽快质押，错过质押周期将不计入任务6奖励。",
