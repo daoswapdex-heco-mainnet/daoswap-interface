@@ -429,6 +429,19 @@
   "empty info for cn 1": "",
   "empty info for cn 2": "",
   "empty info for cn 3": "",
-  "Pick up address#58;": "Pick up address:"
+  "Pick up address#58;": "Pick up address:",
+
+  "1, Invitation release#58;": "1, Invitation release",
+  "Will be available on January 23rd, 2022 at 11#58;00 am.": "Will be available on January 23rd, 2022 at 11:00 am.",
+  "Directly invite planetary stellar to get DST at 20% of pledged LP value.": "Directly invite planetary stellar to get DST at 20% of pledged LP value.",
+  "Directly invite single coin DAO pledge, according to 60% of the number of DAO pledge, and invite arithmetic unlock to get DST reward of 20% of LP value.": "Directly invite single coin DAO pledge, according to 60% of the number of DAO pledge, and invite arithmetic unlock to get DST reward of 20% of LP value.",
+  "The DST reward for inviting unlocking will be transferred directly to the inviter's wallet address when pledged by the pledging party.": "The DST reward for inviting unlocking will be transferred directly to the inviter's wallet address when pledged by the pledging party.",
+  "2, Hask and Competitive Mining#58;": "2, Hask and Competitive Mining:",
+  "Phase 5 of Hask & Competition Mining has ended on January 21, 2022 at 11#58;00.": "Phase 5 of Hask & Competition Mining has ended on January 21, 2022 at 11:00.",
+  "The 6th period of Arithmetic and Competition Mining has started on January 21, 2022 at 11#58;00 and will end on February 4, 2022 at 11#58;00.": "The 6th period of Arithmetic and Competition Mining has started on January 21, 2022 at 11:00 and will end on February 4, 2022 at 11:00.",
+  "The number of single coin pledges will also continue to count towards the count. The new part of the arithmetic value is calculated at 200%, and the unincreased or reduced arithmetic remains unchanged at 100% statistics.": "The number of single coin pledges will also continue to count towards the count. The new part of the arithmetic value is calculated at 200%, and the unincreased or reduced arithmetic remains unchanged at 100% statistics.",
+  "3, Task 6#58;": "3, Task 6:",
+  "Starting from the 5th arithmetic power and competition mining, perform task 6#58; reward the number of nodes added within the team according to the team of the node identity wallet address (this node must be pledged for 1 year, not pledged for 1 year will not be added as new. (Also existing Genesis and seed nodes are excluded). ": "Starting from the 5th arithmetic power and competition mining, perform task 6: reward the number of nodes added within the team according to the team of the node identity wallet address (this node must be pledged for 1 year, not pledged for 1 year will not be added as new. (Also existing Genesis and seed nodes are excluded). ",
+  "For more information, please check#58;": "For more information, please check:"
 
 }
