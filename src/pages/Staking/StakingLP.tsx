@@ -7,7 +7,7 @@ import { CardSection, DataCard, CardNoise, CardBGImage } from './styled'
 import { useTranslation } from 'react-i18next'
 import PoolCard from '../../components/staking/PoolCardForLP'
 import { NodeTabs } from '../../components/NavigationTabs/node'
-// import { useActiveWeb3React } from '../../hooks'
+import { useActiveWeb3React } from '../../hooks'
 
 const PageWrapper = styled(AutoColumn)`
   max-width: 640px;
@@ -30,17 +30,27 @@ const PoolSection = styled.div`
 
 export default function StakingLP() {
   const { t } = useTranslation()
-  // const { account } = useActiveWeb3React()
+  const { account } = useActiveWeb3React()
 
-  // // TODO: is display staking rewards info list for specical address
-  // const whiteList = [
-  //   '0x3DdcFc89B4DD2b33d9a8Ca0F60180527E9810D4B',
-  //   '0x7d3dE024dEB70741c6Dfa0FaD57775A47C227AE2',
-  //   '0xa9bB710996d6ed61B83a5EAB583bAe683199c2de'
-  // ]
-  // const inWhiteList = whiteList.filter(item => item.toLowerCase() === account?.toLowerCase())
+  // TODO: is display staking rewards info list for specical address
+  const whiteList = [
+    '0x3DdcFc89B4DD2b33d9a8Ca0F60180527E9810D4B',
+    '0xBdB9BD48CDCF075D66f81f083b9Ab618a0530c31',
+    '0xa9bB710996d6ed61B83a5EAB583bAe683199c2de'
+  ]
+  const inWhiteList = whiteList.filter(item => item.toLowerCase() === account?.toLowerCase())
 
   const stakingList: any[] = [
+    {
+      period: 4,
+      name: 'StakingLPPeriod4',
+      capAmount: 300000,
+      apr: 116,
+      aprDAO: 34.8,
+      aprDST: 81.2,
+      openStatus: true,
+      display: inWhiteList.length > 0 ? 'normal' : 'none'
+    },
     {
       period: 3,
       name: 'StakingLPPeriod3',
