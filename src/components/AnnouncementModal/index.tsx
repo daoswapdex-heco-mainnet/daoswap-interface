@@ -51,26 +51,57 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
         </RowBetween>
         <AutoColumn gap="auto" justify={'start'}>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('1, Invitation release#58;')}
+            {t('1, Invitation release.')}
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('Will be available on January 23rd, 2022 at 11#58;00 am.')}
-            </Text>
-            <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('Directly invite planetary stellar to get DST at 20% of pledged LP value.')}
+              {t('Will be implemented on January 23rd, 2022 at 11#58;00 am, after this time.')}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t(
-                'Directly invite single coin DAO pledge, according to 60% of the number of DAO pledge, and invite arithmetic unlock to get DST reward of 20% of LP value.'
+                'Directly invite planetary stellar, the inviting party gets DST according to 20% of the pledged LP value.'
               )}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t(
-                "The DST reward for inviting unlocking will be transferred directly to the inviter's wallet address when pledged by the pledging party."
+                'Directly inviting single coin DAO pledges, the pledged volume will be calculated according to 60% of the DAO pledged volume, and the inviting party will receive DST according to 20% of the pledged volume.'
+              )}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t(
+                "The DST reward of the invitation unlock will be transferred directly to the inviter's wallet address when the pledge party pledges."
               )}
             </Text>
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('2, Hask and Competitive Mining#58;')}
+            {t('2, Phase 4 Node Pledge and Phase 3 Single Coin Pledge.')}
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('It will be opened on January 23rd, 2022 at 11#58;00 am.')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('The fourth node pledge with a cap of 300,000 and an annualized rate of 116% (30% DAO, 70% DST)')}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('Phase 3 single coin pledge, cap 100,000, 58% annualized rate (30% DAO, 70% DST)')}
+            </Text>
+          </Text>
+          <Text fontWeight={500} fontSize={14} margin={10}>
+            {t('3, Task 6.')}
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t(
+                'Starting with the 5th period of arithmetic and competitive mining, perform task 6#58; reward the number of new nodes within the team according to the team of node identity wallet address (except for existing Genesis and seed nodes.)'
+              )}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t(
+                'Task 6 rewards only pledged 1-year planets and stars, and those still unpledged are automatically counted as rewards in the next period after pledging. If you need to unlock mission 6, please pledge as soon as possible during the node pledge period, missing the pledge period will not count towards the mission 6 reward.'
+              )}
+            </Text>
+            <Text fontWeight={500} fontSize={14} margin={10}>
+              {t('Collection address.')}{' '}
+              <StyledLink href={'https://www.daoswap.cc/task-6'}>https://www.daoswap.cc/task-6</StyledLink>
+            </Text>
+          </Text>
+          <Text fontWeight={500} fontSize={14} margin={10}>
+            {t('4, Hask and Competitive Mining#58;')}
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t('Phase 5 of Hask & Competition Mining has ended on January 21, 2022 at 11#58;00.')}
             </Text>
@@ -83,20 +114,6 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
               {t(
                 'The number of single coin pledges will also continue to count towards the count. The new part of the arithmetic value is calculated at 200%, and the unincreased or reduced arithmetic remains unchanged at 100% statistics.'
               )}
-            </Text>
-          </Text>
-          <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('3, Task 6#58;')}
-            <Text fontWeight={500} fontSize={14} margin={10}>
-              {t(
-                'Starting from the 5th arithmetic power and competition mining, perform task 6#58; reward the number of nodes added within the team according to the team of the node identity wallet address (this node must be pledged for 1 year, not pledged for 1 year will not be added as new. (Also existing Genesis and seed nodes are excluded). '
-              )}
-            </Text>
-            <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('For more information, please check#58;')}{' '}
-              <StyledLink href={'https://docs.daoswap.cc/jiguangxueyuan/'}>
-                https://docs.daoswap.cc/jiguangxueyuan/
-              </StyledLink>
             </Text>
           </Text>
         </AutoColumn>
