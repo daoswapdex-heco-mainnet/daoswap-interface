@@ -338,8 +338,10 @@
   "StakingLPPeriod1": "一期：质押365天",
   "StakingLPPeriod2": "二期：质押365天",
   "StakingLPPeriod3": "三期：质押365天",
+  "StakingLPPeriod4": "四期：质押365天",
   "StakingDAOPeriod1": "一期：质押365天",
   "StakingDAOPeriod2": "二期：质押365天",
+  "StakingDAOPeriod3": "三期：质押365天",
 
   "Bridge": "跨链桥",
   "changeLanguage": "切换语言",
