@@ -103,11 +103,11 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
           <Text fontWeight={500} fontSize={14} margin={10}>
             {t('4, Hask and Competitive Mining#58;')}
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('Phase 5 of Hask & Competition Mining has ended on January 21, 2022 at 11#58;00.')}
+              {t('Phase 6 of Hask & Competition Mining has ended on February 4, 2022 at 11#58;00.')}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t(
-                'The 6th period of Arithmetic and Competition Mining has started on January 21, 2022 at 11#58;00 and will end on February 4, 2022 at 11#58;00.'
+                'The 7th period of Arithmetic and Competition Mining has started on February 4, 2022 at 11#58;00 and will end on February 18, 2022 at 11#58;00.'
               )}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
