@@ -283,6 +283,7 @@
   "When you withdraw, the contract will automagically claim DAO on your behalf!": "当您取出时，合约将自动代表您申请DAO！",
   "Your liquidity deposits": "您的存入的流动性",
   "Your unclaimed DAO": "您未取出的DAO",
+  "Your unclaimed": "您未取出的",
   "Withdraw": "取出",
   "Deposit DLT LP Tokens": "存入DLT LP代币",
   "DLT LP tokens available": "DLT LP代币可用",
@@ -314,6 +315,7 @@
   "Claim DAO": "提取DAO",
 
   "DAO Stake Activity": "进行中",
+  "DAO Stake Innovation": "创新",
   "DAO Stake Ended": "已结束",
   "DAO Stake Ended 2": "已结束(2期)",
   "Period": "期数",
