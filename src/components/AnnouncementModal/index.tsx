@@ -72,12 +72,12 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
             </Text>
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            {t('2, Phase 4 Node Pledge and Phase 3 Single Coin Pledge.')}
+            {t('2, Phase 5 Node Pledge and Phase 3 Single Coin Pledge.')}
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t('It will be opened on January 23rd, 2022 at 11#58;00 am.')}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
-              {t('The fourth node pledge with a cap of 300,000 and an annualized rate of 116% (30% DAO, 70% DST)')}
+              {t('The fifth node pledge with a cap of 300,000 and an annualized rate of 114% (30% DAO, 70% DST)')}
             </Text>
             <Text fontWeight={500} fontSize={14} margin={10}>
               {t('Phase 3 single coin pledge, cap 100,000, 58% annualized rate (30% DAO, 70% DST)')}
