@@ -1,12 +1,11 @@
 import React from 'react'
 import { AutoColumn } from '../../components/Column'
 import styled from 'styled-components'
-import { STAKING_REWARDS_INFO, useStakingInfo } from '../../state/stake/hooks'
+import { STAKING_REWARDS_INFO, useStakingInfo } from '../../state/stakeInnovation/hooks'
 import { TYPE } from '../../theme'
-import PoolCard from '../../components/earn/PoolCard'
+import PoolCard from '../../components/earnInnovation/PoolCard'
 import { RowBetween } from '../../components/Row'
-import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earn/styled'
-import { Countdown } from './Countdown'
+import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earnInnovation/styled'
 import Loader from '../../components/Loader'
 import { useActiveWeb3React } from '../../hooks'
 import { useTranslation } from 'react-i18next'
@@ -68,14 +67,11 @@ export default function Earn() {
         </DataCard>
       </TopSection>
 
-      <StakeTabs active={'dao'} />
+      <StakeTabs active={'dao-innovation'} />
 
       <AutoColumn gap="lg" style={{ width: '100%', maxWidth: '720px' }}>
         <DataRow style={{ alignItems: 'baseline' }}>
           <TYPE.mediumHeader style={{ marginTop: '0.5rem' }}>{t('Participating pools')}</TYPE.mediumHeader>
-          {stakingRewardsExist && stakingInfos?.length === 0 ? null : !stakingRewardsExist ? null : (
-            <Countdown exactEnd={stakingInfos?.[0]?.periodFinish} />
-          )}
         </DataRow>
 
         <PoolSection>

@@ -298,6 +298,7 @@
   "When you withdraw, the contract will automagically claim DAO on your behalf!": "When you withdraw, the contract will automagically claim DAO on your behalf!",
   "Your liquidity deposits": "Your liquidity deposits",
   "Your unclaimed DAO": "Your unclaimed DAO",
+  "Your unclaimed": "Your unclaimed",
   "Withdraw": "Withdraw",
   "Deposit DLT LP Tokens": "Deposit DLT LP Tokens",
   "DLT LP tokens available": "DLT LP tokens available",
@@ -329,6 +330,7 @@
   "Claim DAO": "Claim DAO",
 
   "DAO Stake Activity": "Activity",
+  "DAO Stake Innovation": "Innovation",
   "DAO Stake Ended": "Ended",
   "DAO Stake Ended 2": "Ended(P2)",
   "Period": "Period",

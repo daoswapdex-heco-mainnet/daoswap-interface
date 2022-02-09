@@ -11,12 +11,12 @@ import { useWalletModalToggle } from '../../state/application/hooks'
 import { TYPE } from '../../theme'
 
 import { RowBetween } from '../../components/Row'
-import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earn/styled'
+import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earnInnovation/styled'
 import { ButtonPrimary, ButtonEmpty } from '../../components/Button'
-import StakingModal from '../../components/earn/StakingModal'
-import { useStakingInfo } from '../../state/stake/hooks'
-import UnstakingModal from '../../components/earn/UnstakingModal'
-import ClaimRewardModal from '../../components/earn/ClaimRewardModal'
+import StakingModal from '../../components/earnInnovation/StakingModal'
+import { useStakingInfo } from '../../state/stakeInnovation/hooks'
+import UnstakingModal from '../../components/earnInnovation/UnstakingModal'
+import ClaimRewardModal from '../../components/earnInnovation/ClaimRewardModal'
 import { useTokenBalance } from '../../state/wallet/hooks'
 import { useActiveWeb3React } from '../../hooks'
 import { useColor } from '../../hooks/useColor'
@@ -270,8 +270,9 @@ export default function Manage({
             <AutoColumn gap="sm">
               <RowBetween>
                 <div>
-                  {/* // TODO:Daoswap UNI -> DAO */}
-                  <TYPE.black>{t('Your unclaimed DAO')}</TYPE.black>
+                  <TYPE.black>
+                    {t('Your unclaimed')} {stakingInfo?.rewardsTokenSymbol}
+                  </TYPE.black>
                 </div>
                 {stakingInfo?.earnedAmount && JSBI.notEqual(BIG_INT_ZERO, stakingInfo?.earnedAmount?.raw) && (
                   <ButtonEmpty
@@ -312,13 +313,12 @@ export default function Manage({
             </AutoColumn>
           </StyledBottomCard>
         </BottomSection>
-        <TYPE.main style={{ textAlign: 'center' }} fontSize={14}>
+        {/* <TYPE.main style={{ textAlign: 'center' }} fontSize={14}>
           <span role="img" aria-label="wizard-icon" style={{ marginRight: '8px' }}>
             ⭐️
           </span>
-          {/* // TODO:Daoswap UNI -> DAO */}
           {t('When you withdraw, the contract will automagically claim DAO on your behalf!')}
-        </TYPE.main>
+        </TYPE.main> */}
 
         {!showAddLiquidityButton && (
           <DataRow style={{ marginBottom: '1rem' }}>

@@ -16,11 +16,13 @@ import {
   RedirectToAddLiquidity
 } from './AddLiquidity/redirects'
 import Earn from './Earn'
+import EarnInnovation from './EarnInnovation'
 import EarnHistory from './EarnHistory'
 import EarnHistory1 from './EarnHistory1'
 import EarnHistory2 from './EarnHistory2'
 import EarnHistory3 from './EarnHistory3'
 import Manage from './Earn/Manage'
+import EarnInnovationManage from './EarnInnovation/Manage'
 import ManageHistory1 from './EarnHistory1/Manage'
 import ManageHistory2 from './EarnHistory2/Manage'
 import ManageHistory3 from './EarnHistory3/Manage'
@@ -95,6 +97,7 @@ export default function App() {
               <Route exact strict path="/find" component={PoolFinder} />
               <Route exact strict path="/pool" component={Pool} />
               <Route exact strict path="/dao" component={Earn} />
+              <Route exact strict path="/dao-innovation" component={EarnInnovation} />
               <Route exact strict path="/dao-history" component={EarnHistory} />
               <Route exact strict path="/dao-history-1" component={EarnHistory1} />
               <Route exact strict path="/dao-history-2" component={EarnHistory2} />
@@ -112,6 +115,7 @@ export default function App() {
               <Route exact strict path="/migrate/v1" component={MigrateV1} />
               <Route exact strict path="/migrate/v1/:address" component={MigrateV1Exchange} />
               <Route exact strict path="/dao/:currencyIdA/:currencyIdB" component={Manage} />
+              <Route exact strict path="/dao-innovation/:currencyIdA/:currencyIdB" component={EarnInnovationManage} />
               <Route exact strict path="/dao-history-1/:currencyIdA/:currencyIdB" component={ManageHistory1} />
               <Route exact strict path="/dao-history-2/:currencyIdA/:currencyIdB" component={ManageHistory2} />
               <Route exact strict path="/dao-history-3/:currencyIdA/:currencyIdB" component={ManageHistory3} />

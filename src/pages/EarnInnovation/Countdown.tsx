@@ -1,20 +1,30 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import { STAKING_GENESIS, REWARDS_DURATION_DAYS } from '../../state/stakeHistory3/hooks'
 import { TYPE } from '../../theme'
 import { useTranslation } from 'react-i18next'
 
 const MINUTE = 60
 const HOUR = MINUTE * 60
 const DAY = HOUR * 24
-const REWARDS_DURATION = DAY * REWARDS_DURATION_DAYS
 
-export function Countdown({ exactEnd }: { exactEnd?: Date }) {
+export function Countdown({
+  stakingGenesis,
+  rewardsDurationDays,
+  exactEnd
+}: {
+  stakingGenesis: number
+  rewardsDurationDays: number
+  exactEnd?: Date
+}) {
+  const REWARDS_DURATION = DAY * rewardsDurationDays
+
   const { t } = useTranslation()
   // get end/beginning times
-  const end = useMemo(() => (exactEnd ? Math.floor(exactEnd.getTime() / 1000) : STAKING_GENESIS + REWARDS_DURATION), [
-    exactEnd
+  const end = useMemo(() => (exactEnd ? Math.floor(exactEnd.getTime() / 1000) : stakingGenesis + REWARDS_DURATION), [
+    REWARDS_DURATION,
+    exactEnd,
+    stakingGenesis
   ])
-  const begin = useMemo(() => end - REWARDS_DURATION, [end])
+  const begin = useMemo(() => end - REWARDS_DURATION, [REWARDS_DURATION, end])
 
   // get current time
   const [time, setTime] = useState(() => Math.floor(Date.now() / 1000))
@@ -42,8 +52,8 @@ export function Countdown({ exactEnd }: { exactEnd?: Date }) {
       message = t('Rewards end in')
       timeRemaining = timeUntilEnd
     } else {
-      message = t('Rewards have ended!')
-      // message = t('Rewards not started yet.')
+      // message = t('Rewards have ended!')
+      message = t('Rewards not started yet.')
       timeRemaining = Infinity
     }
   }
@@ -57,7 +67,7 @@ export function Countdown({ exactEnd }: { exactEnd?: Date }) {
   const seconds = timeRemaining
 
   return (
-    <TYPE.black fontWeight={400}>
+    <TYPE.black style={{ textAlign: 'right' }} color={'white'} fontWeight={500}>
       {message}{' '}
       {Number.isFinite(timeRemaining) && (
         <code>
