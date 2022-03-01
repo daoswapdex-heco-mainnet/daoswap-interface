@@ -42,15 +42,25 @@ export default function StakingLP() {
 
   const stakingList: any[] = [
     {
+      period: 6,
+      name: 'StakingLPPeriod6',
+      capAmount: 300000,
+      apr: 112,
+      aprDAO: 0,
+      aprDST: 112,
+      openStatus: true,
+      display: 'normal'
+      // display: inWhiteList.length > 0 ? 'normal' : 'none'
+    },
+    {
       period: 5,
       name: 'StakingLPPeriod5',
       capAmount: 300000,
       apr: 114,
       aprDAO: 34.2,
       aprDST: 79.8,
-      openStatus: true,
+      openStatus: false,
       display: 'normal'
-      // display: inWhiteList.length > 0 ? 'normal' : 'none'
     },
     {
       period: 4,
