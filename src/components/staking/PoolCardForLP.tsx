@@ -103,7 +103,7 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: any }) {
           <TYPE.white textAlign={'right'}>
             {stakingInfo.apr} %{' '}
             <TYPE.white fontSize={9}>
-              ({stakingInfo.aprDAO > 0 ? `DAO {stakingInfo.aprDAO}% / ` : ''}DST {stakingInfo.aprDST}%)
+              ({stakingInfo.aprDAO > 0 ? `DAO ${stakingInfo.aprDAO}% / ` : ''}DST {stakingInfo.aprDST}%)
             </TYPE.white>
           </TYPE.white>
         </RowBetween>
