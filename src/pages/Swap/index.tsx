@@ -3,7 +3,7 @@ import React, { useCallback, useContext, useEffect, useMemo, useState } from 're
 import { ArrowDown } from 'react-feather'
 // import ReactGA from 'react-ga'
 import { Text } from 'rebass'
-import { ThemeContext } from 'styled-components'
+import styled, { ThemeContext } from 'styled-components'
 import AuditLogo from '../../components/AuditLogo'
 import AddressInputPanel from '../../components/AddressInputPanel'
 import { ButtonError, ButtonLight, ButtonPrimary, ButtonConfirmed } from '../../components/Button'
@@ -47,6 +47,33 @@ import AppBody from '../AppBody'
 import { ClickableText } from '../Pool/styleds'
 import Loader from '../../components/Loader'
 import { useTranslation } from 'react-i18next'
+import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earn/styled'
+
+const TopSection = styled(AutoColumn)`
+  max-width: 420px;
+  width: 100%;
+  margin-bottom: 1rem;
+`
+
+const StyledLink = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  color: ${({ theme }) => theme.primary1};
+  font-weight: 500;
+
+  :hover {
+    text-decoration: underline;
+  }
+
+  :focus {
+    outline: none;
+    text-decoration: underline;
+  }
+
+  :active {
+    text-decoration: none;
+  }
+`
 
 export default function Swap() {
   const { t } = useTranslation()
@@ -271,11 +298,32 @@ export default function Swap() {
 
   return (
     <>
+      <TopSection gap="md">
+        <DataCard>
+          <CardBGImage />
+          <CardNoise />
+          <CardSection>
+            <AutoColumn gap="md">
+              <RowBetween>
+                <TYPE.white fontSize={14}>
+                  {t('From now on DAOSWAP will use the new domain name')}{' '}
+                  <StyledLink href={'https://app.daoswap.cc'}>https://app.daoswap.cc</StyledLink>{' '}
+                  {t('Please update the collection of new domains')}
+                </TYPE.white>
+              </RowBetween>
+            </AutoColumn>
+          </CardSection>
+          <CardBGImage />
+          <CardNoise />
+        </DataCard>
+      </TopSection>
+
       <TokenWarningModal
         isOpen={urlLoadedTokens.length > 0 && !dismissTokenWarning}
         tokens={urlLoadedTokens}
         onConfirm={handleConfirmTokenWarning}
       />
+
       <AppBody>
         <SwapPoolTabs active={'swap'} />
         <Wrapper id="swap-page">
